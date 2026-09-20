@@ -19,6 +19,8 @@ I build and harden the layer between AI model responses and production Python co
 
 ### [LLM Reliability Rescue](https://github.com/zongsm-cmyk/llm-reliability-rescue-demo)
 
+[![CI](https://github.com/zongsm-cmyk/llm-reliability-rescue-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/zongsm-cmyk/llm-reliability-rescue-demo/actions/workflows/ci.yml)
+
 A self-built public engineering proof for one of the most common LLM integration problems: **unreliable structured output**.
 
 It currently demonstrates:
