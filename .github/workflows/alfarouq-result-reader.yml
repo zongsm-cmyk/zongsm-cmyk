@@ -1,0 +1,27 @@
+name: ALFAROUQ Result Reader
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.alfarouq/read-result.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  read:
+    if: github.actor == 'zongsm-cmyk'
+    runs-on: ubuntu-latest
+    env:
+      BROKER_URL: https://alfarouq-broker-production.up.railway.app
+      BROKER_TOKEN: ${{ secrets.ALFAROUQ_BROKER_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read result
+        shell: bash
+        run: |
+          ID="$(tr -d '\r\n ' < .alfarouq/read-result.txt)"
+          curl --fail-with-body --silent --show-error \
+            -H "Authorization: Bearer $BROKER_TOKEN" \
+            "$BROKER_URL/v1/commands/$ID"
