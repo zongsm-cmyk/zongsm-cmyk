@@ -1,0 +1,16 @@
+name: router-test
+on:
+  push:
+    branches: [alfarouq-router-v1-shadow]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: alfarouq-router-v1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun test
