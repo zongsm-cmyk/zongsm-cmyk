@@ -1,0 +1,8 @@
+{
+  "request_id": "gha-health-20260928-01",
+  "idempotency_key": "gha-health-20260928-01",
+  "action": "health",
+  "args": {},
+  "risk_class": "read_only",
+  "expires_in_sec": 600
+}
