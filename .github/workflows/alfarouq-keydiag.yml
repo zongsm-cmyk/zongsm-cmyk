@@ -1,0 +1,47 @@
+name: ALFAROUQ Key Format Diagnostic
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.alfarouq/keydiag.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    if: github.actor == 'zongsm-cmyk'
+    runs-on: ubuntu-latest
+    env:
+      K: ${{ secrets.ALFAROUQ_CONTROLLER_PRIVATE_KEY_B64 }}
+    steps:
+      - name: Diagnose key format safely
+        shell: bash
+        run: |
+          node <<'NODE'
+          const s = String(process.env.K || '');
+          const t = s.trim();
+          let decoded = Buffer.alloc(0);
+          let decodeOk = false;
+          try {
+            const n = t.replace(/-/g,'+').replace(/_/g,'/').replace(/\s+/g,'');
+            decoded = Buffer.from(n + '='.repeat((4 - n.length % 4) % 4), 'base64');
+            decodeOk = decoded.length > 0;
+          } catch {}
+          const dt = decodeOk ? decoded.toString('utf8') : '';
+          const info = {
+            present: t.length > 0,
+            length: t.length,
+            hasPemMarker: /BEGIN [A-Z0-9 ]*PRIVATE KEY/.test(t),
+            hasLiteralSlashN: t.includes('\\n'),
+            isHex64: /^[0-9a-fA-F]{64}$/.test(t),
+            isHex128: /^[0-9a-fA-F]{128}$/.test(t),
+            looksJson: (t.startsWith('{') && t.endsWith('}')) || (t.startsWith('"') && t.endsWith('"')),
+            base64Decoded: decodeOk,
+            decodedLength: decoded.length,
+            decodedHasPemMarker: /BEGIN [A-Z0-9 ]*PRIVATE KEY/.test(dt),
+            decodedLooksJson: (dt.trim().startsWith('{') && dt.trim().endsWith('}')) || (dt.trim().startsWith('"') && dt.trim().endsWith('"'))
+          };
+          console.log('KEY_FORMAT_DIAG=' + JSON.stringify(info));
+          NODE
