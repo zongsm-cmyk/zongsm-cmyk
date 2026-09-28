@@ -20,28 +20,49 @@ jobs:
         shell: bash
         run: |
           node <<'NODE'
-          const s = String(process.env.K || '');
-          const t = s.trim();
-          let decoded = Buffer.alloc(0);
-          let decodeOk = false;
-          try {
-            const n = t.replace(/-/g,'+').replace(/_/g,'/').replace(/\s+/g,'');
-            decoded = Buffer.from(n + '='.repeat((4 - n.length % 4) % 4), 'base64');
-            decodeOk = decoded.length > 0;
-          } catch {}
-          const dt = decodeOk ? decoded.toString('utf8') : '';
-          const info = {
-            present: t.length > 0,
-            length: t.length,
-            hasPemMarker: /BEGIN [A-Z0-9 ]*PRIVATE KEY/.test(t),
-            hasLiteralSlashN: t.includes('\\n'),
-            isHex64: /^[0-9a-fA-F]{64}$/.test(t),
-            isHex128: /^[0-9a-fA-F]{128}$/.test(t),
-            looksJson: (t.startsWith('{') && t.endsWith('}')) || (t.startsWith('"') && t.endsWith('"')),
-            base64Decoded: decodeOk,
-            decodedLength: decoded.length,
-            decodedHasPemMarker: /BEGIN [A-Z0-9 ]*PRIVATE KEY/.test(dt),
-            decodedLooksJson: (dt.trim().startsWith('{') && dt.trim().endsWith('}')) || (dt.trim().startsWith('"') && dt.trim().endsWith('"'))
-          };
-          console.log('KEY_FORMAT_DIAG=' + JSON.stringify(info));
+          const crypto = require('crypto');
+          const raw = String(process.env.K || '').trim();
+
+          function maybeB64(s) {
+            const t = s.trim().replace(/\s+/g,'');
+            if (!t || !/^[A-Za-z0-9+/_=-]+$/.test(t)) return null;
+            try {
+              const n = t.replace(/-/g,'+').replace(/_/g,'/');
+              const b = Buffer.from(n + '='.repeat((4 - n.length % 4) % 4), 'base64');
+              return b.length ? b : null;
+            } catch { return null; }
+          }
+
+          function classify(buf) {
+            const text = buf.toString('utf8').trim();
+            const first = [...buf.subarray(0,4)];
+            const types = [];
+            if (text.includes('BEGIN PRIVATE KEY')) types.push('pem-pkcs8');
+            if (text.includes('BEGIN OPENSSH PRIVATE KEY')) types.push('openssh-pem');
+            if (text.startsWith('{') || text.startsWith('[')) types.push('json-like');
+            if (buf.length > 2 && buf[0] === 0x30) types.push('asn1-sequence');
+            if (first[0] === 0x1f && first[1] === 0x8b) types.push('gzip');
+            if (first[0] === 0x50 && first[1] === 0x4b) types.push('zip');
+            let keyOk = false, keyType = null;
+            for (const candidate of [
+              () => crypto.createPrivateKey(text),
+              () => crypto.createPrivateKey({key:buf,format:'der',type:'pkcs8'})
+            ]) {
+              try { const k=candidate(); keyOk=true; keyType=k.asymmetricKeyType; break; } catch {}
+            }
+            return {length:buf.length,types,keyOk,keyType};
+          }
+
+          const layers = [];
+          layers.push({layer:0,...classify(Buffer.from(raw,'utf8'))});
+          let cur = raw;
+          for (let i=1;i<=4;i++) {
+            const b = maybeB64(cur);
+            if (!b) break;
+            layers.push({layer:i,...classify(b)});
+            const t=b.toString('utf8').trim();
+            if (!/^[A-Za-z0-9+/_=-]+$/.test(t.replace(/\s+/g,''))) break;
+            cur=t;
+          }
+          console.log('KEY_FORMAT_DIAG=' + JSON.stringify({present:raw.length>0,rawLength:raw.length,layers}));
           NODE
