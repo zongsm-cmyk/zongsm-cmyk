@@ -1,0 +1,94 @@
+name: ALFAROUQ Fast Ingress
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  dispatch:
+    if: >-
+      github.event.issue.user.login == 'zongsm-cmyk' &&
+      startsWith(github.event.issue.title, '[ALFAROUQ]')
+    runs-on: ubuntu-latest
+    env:
+      BROKER_URL: https://alfarouq-broker-production.up.railway.app
+      BROKER_TOKEN: ${{ secrets.ALFAROUQ_BROKER_TOKEN }}
+      PRIVATE_KEY_B64: ${{ secrets.ALFAROUQ_CONTROLLER_PRIVATE_KEY_B64 }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
+    steps:
+      - name: Build and sign command envelope
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const crypto = require('crypto');
+
+          function canonicalize(obj) {
+            if (obj === null) return 'null';
+            if (typeof obj === 'boolean') return obj ? 'true' : 'false';
+            if (typeof obj === 'number') return JSON.stringify(obj);
+            if (typeof obj === 'string') return JSON.stringify(obj);
+            if (Array.isArray(obj)) return '[' + obj.map(canonicalize).join(',') + ']';
+            if (typeof obj === 'object') {
+              return '{' + Object.keys(obj).sort()
+                .map(k => JSON.stringify(k) + ':' + canonicalize(obj[k]))
+                .join(',') + '}';
+            }
+            return JSON.stringify(obj);
+          }
+
+          if (!process.env.BROKER_TOKEN) throw new Error('ALFAROUQ_BROKER_TOKEN missing');
+          if (!process.env.PRIVATE_KEY_B64) throw new Error('ALFAROUQ_CONTROLLER_PRIVATE_KEY_B64 missing');
+
+          let intent;
+          try { intent = JSON.parse(process.env.ISSUE_BODY || '{}'); }
+          catch { throw new Error('Issue body must be valid JSON'); }
+
+          const action = intent.action;
+          const args = intent.args ?? {};
+          const risk = intent.risk_class || 'read_only';
+          if (!/^[a-z0-9_]{2,64}$/.test(action || '')) throw new Error('invalid action');
+          if (!['read_only','reversible','irreversible','destructive'].includes(risk)) throw new Error('invalid risk_class');
+          if (['irreversible','destructive'].includes(risk) && intent.human_approved !== true) {
+            throw new Error('explicit human approval required');
+          }
+
+          const now = new Date();
+          const ttl = Math.min(Math.max(Number(intent.expires_in_sec || 600), 30), 900);
+          const envelope = {
+            request_id: String(intent.request_id || crypto.randomUUID()),
+            idempotency_key: String(intent.idempotency_key || intent.request_id || crypto.randomUUID()),
+            architecture_version: 'abu-phase0-v1',
+            issued_at: now.toISOString(),
+            expires_at: new Date(now.getTime() + ttl * 1000).toISOString(),
+            action,
+            args,
+            risk_class: risk,
+            nonce: crypto.randomUUID()
+          };
+
+          const pem = Buffer.from(process.env.PRIVATE_KEY_B64, 'base64').toString('utf8');
+          const key = crypto.createPrivateKey(pem);
+          const signature = crypto.sign(null, Buffer.from(canonicalize(envelope)), key).toString('base64');
+          const full = { ...envelope, signature };
+          fs.writeFileSync('command.json', JSON.stringify(full));
+          fs.writeFileSync('request_id.txt', envelope.request_id);
+          NODE
+
+      - name: Send directly to ALFAROUQ Broker
+        shell: bash
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -X POST "$BROKER_URL/v1/commands" \
+            -H "Authorization: Bearer $BROKER_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data-binary @command.json
+
+      - name: Print request id
+        shell: bash
+        run: |
+          echo "ALFAROUQ_REQUEST_ID=$(cat request_id.txt)"
