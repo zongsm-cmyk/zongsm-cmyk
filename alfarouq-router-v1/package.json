@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "bun run src/index.ts",
-    "test": "bun test"
+    "start": "tsx src/index.ts",
+    "test": "node --test"
   },
   "dependencies": {
-    "hono": "latest"
+    "hono": "latest",
+    "tsx": "latest"
   }
 }
