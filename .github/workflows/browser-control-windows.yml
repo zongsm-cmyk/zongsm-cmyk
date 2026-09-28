@@ -1,0 +1,51 @@
+name: Browser Control Windows Validation
+
+on:
+  push:
+    branches:
+      - browser-control-chrome-use-v1
+    paths:
+      - "AGENTS.md"
+      - "tools/bootstrap-browser-control.ps1"
+      - "tools/smoke-browser-control.ps1"
+      - ".github/workflows/browser-control-windows.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pinned chrome-use
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $env:AGENT_BROWSER_VERSION = "v1.5.139"
+          Invoke-RestMethod https://raw.githubusercontent.com/leeguooooo/chrome-use/main/install.ps1 | Invoke-Expression
+
+      - name: Verify CLI
+        shell: pwsh
+        run: |
+          chrome-use --version
+          chrome-use --help
+
+      - name: Verify core skill is available
+        shell: pwsh
+        run: |
+          chrome-use skills get core | Out-Null
+
+      - name: Record limitation
+        shell: pwsh
+        run: |
+          "Cloud validation PASS: install/CLI/core skill work on Windows." | Out-File browser-control-validation.txt
+          "Local ALFAROUQ extension/native-messaging connection remains a one-time machine-side step." | Out-File browser-control-validation.txt -Append
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: browser-control-validation
+          path: browser-control-validation.txt
