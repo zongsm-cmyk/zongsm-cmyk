@@ -2,5 +2,5 @@
   "action": "health",
   "args": {},
   "risk_class": "read_only",
-  "expires_in_sec": 599
+  "expires_in_sec": 600
 }
