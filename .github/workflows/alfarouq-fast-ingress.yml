@@ -16,49 +16,77 @@ jobs:
     env:
       BROKER_URL: https://alfarouq-broker-production.up.railway.app
       BROKER_TOKEN: ${{ secrets.ALFAROUQ_BROKER_TOKEN }}
+      PRIVATE_KEY_B64: ${{ secrets.ALFAROUQ_CONTROLLER_PRIVATE_KEY_B64 }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build signed GitHub-style ingress request
+      - name: Build and sign command envelope
         shell: bash
         run: |
           node <<'NODE'
           const fs = require('fs');
           const crypto = require('crypto');
 
-          if (!process.env.BROKER_TOKEN) throw new Error('ALFAROUQ_BROKER_TOKEN missing');
-          const spec = JSON.parse(fs.readFileSync('.alfarouq/command.json','utf8'));
-
-          const fakeIssueId = Number(String(Date.now()).slice(-12));
-          const payload = {
-            action: 'opened',
-            issue: {
-              id: fakeIssueId,
-              title: '[ALFAROUQ] ChatGPT command',
-              body: JSON.stringify(spec),
-              user: { login: 'zongsm-cmyk' }
+          function canonicalize(obj) {
+            if (obj === null) return 'null';
+            if (typeof obj === 'boolean') return obj ? 'true' : 'false';
+            if (typeof obj === 'number') return JSON.stringify(obj);
+            if (typeof obj === 'string') return JSON.stringify(obj);
+            if (Array.isArray(obj)) return '[' + obj.map(canonicalize).join(',') + ']';
+            if (typeof obj === 'object') {
+              return '{' + Object.keys(obj).sort()
+                .map(k => JSON.stringify(k) + ':' + canonicalize(obj[k]))
+                .join(',') + '}';
             }
+            return JSON.stringify(obj);
+          }
+
+          if (!process.env.BROKER_TOKEN) throw new Error('ALFAROUQ_BROKER_TOKEN missing');
+          if (!process.env.PRIVATE_KEY_B64) throw new Error('ALFAROUQ_CONTROLLER_PRIVATE_KEY_B64 missing');
+
+          const intent = JSON.parse(fs.readFileSync('.alfarouq/command.json','utf8'));
+          const action = intent.action;
+          const args = intent.args ?? {};
+          const risk = intent.risk_class || 'read_only';
+
+          if (!/^[a-z0-9_]{2,64}$/.test(action || '')) throw new Error('invalid action');
+          if (!['read_only','reversible','irreversible','destructive'].includes(risk)) throw new Error('invalid risk_class');
+          if (['irreversible','destructive'].includes(risk) && intent.human_approved !== true) {
+            throw new Error('explicit human approval required');
+          }
+
+          const now = new Date();
+          const ttl = Math.min(Math.max(Number(intent.expires_in_sec || 600), 30), 900);
+          const requestId = String(intent.request_id || crypto.randomUUID());
+          const envelope = {
+            request_id: requestId,
+            idempotency_key: String(intent.idempotency_key || requestId),
+            architecture_version: 'abu-phase0-v1',
+            issued_at: now.toISOString(),
+            expires_at: new Date(now.getTime() + ttl * 1000).toISOString(),
+            action,
+            args,
+            risk_class: risk,
+            nonce: crypto.randomUUID()
           };
 
-          const raw = JSON.stringify(payload);
-          const sig = crypto.createHmac('sha256', process.env.BROKER_TOKEN).update(raw).digest('hex');
-          fs.writeFileSync('github-event.json', raw);
-          fs.writeFileSync('signature.txt', sig);
-          fs.writeFileSync('expected_request_id.txt', 'gh-' + fakeIssueId);
+          const pem = Buffer.from(process.env.PRIVATE_KEY_B64, 'base64').toString('utf8');
+          const key = crypto.createPrivateKey(pem);
+          const signature = crypto.sign(null, Buffer.from(canonicalize(envelope)), key).toString('base64');
+          fs.writeFileSync('command.json', JSON.stringify({ ...envelope, signature }));
+          fs.writeFileSync('request_id.txt', requestId);
           NODE
 
-      - name: Send to broker signing ingress
+      - name: Send directly to ALFAROUQ Broker
         shell: bash
         run: |
-          SIG="$(cat signature.txt)"
           curl --fail-with-body --silent --show-error \
-            -X POST "$BROKER_URL/v1/github-command" \
-            -H "x-github-event: issues" \
-            -H "x-hub-signature-256: sha256=$SIG" \
+            -X POST "$BROKER_URL/v1/commands" \
+            -H "Authorization: Bearer $BROKER_TOKEN" \
             -H "Content-Type: application/json" \
-            --data-binary @github-event.json
+            --data-binary @command.json
 
-      - name: Print expected request id
+      - name: Print request id
         shell: bash
         run: |
-          echo "ALFAROUQ_EXPECTED_REQUEST_ID=$(cat expected_request_id.txt)"
+          echo "ALFAROUQ_REQUEST_ID=$(cat request_id.txt)"
