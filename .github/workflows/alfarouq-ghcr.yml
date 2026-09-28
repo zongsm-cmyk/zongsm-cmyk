@@ -1,0 +1,27 @@
+name: Publish pinned ALFAROUQ Fast Ingress
+on:
+  push:
+    branches: [alfarouq-ghcr-publish-20260928]
+    paths: [.github/workflows/alfarouq-ghcr.yml]
+permissions:
+  contents: read
+  packages: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 7fb327cbb1166a853c83eda048b44d674a984d03
+          persist-credentials: false
+      - name: Build and publish exact application commit
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IMAGE: ghcr.io/zongsm-cmyk/alfarouq-fast-ingress:7fb327cbb1166a853c83eda048b44d674a984d03
+        run: |
+          test "$(git rev-parse HEAD)" = 7fb327cbb1166a853c83eda048b44d674a984d03
+          printf '%s' "$GHCR_TOKEN" | docker login ghcr.io -u zongsm-cmyk --password-stdin
+          docker build --platform linux/amd64 --label org.opencontainers.image.source=https://github.com/zongsm-cmyk/zongsm-cmyk --label org.opencontainers.image.revision=7fb327cbb1166a853c83eda048b44d674a984d03 -t "$IMAGE" alfarouq-router-v1
+          docker push "$IMAGE"
+          docker logout ghcr.io
