@@ -8,7 +8,7 @@ $chromeUseExe = Join-Path $chromeUseDir "chrome-use.exe"
 Write-Host "[1/5] Installing pinned chrome-use $env:AGENT_BROWSER_VERSION"
 Invoke-RestMethod $installer | Invoke-Expression
 
-# The official installer adds chrome-use to the *user* PATH for new terminals.
+# The official installer adds chrome-use to the user PATH for new terminals.
 # Make the just-installed binary available in this current PowerShell process too.
 if (-not (Test-Path $chromeUseExe)) {
   throw "chrome-use executable not found at $chromeUseExe"
@@ -23,9 +23,10 @@ Write-Host "[2/5] Verifying binary"
 Write-Host "[3/5] Installing project skill"
 & $chromeUseExe skill install --project
 
-Write-Host "[4/5] Checking local relay/extension status"
+Write-Host "[4/5] Registering native-messaging host"
+& $chromeUseExe extension install
+
+Write-Host "[5/5] Checking local relay/extension status"
 & $chromeUseExe status
 
-Write-Host "[5/5] Browser extension connection"
-Write-Host "If status says the extension is not connected, run: chrome-use extension connect"
-Write-Host "After the extension is connected, run tools\smoke-browser-control.ps1"
+Write-Host "If the Chrome extension itself is not installed yet, install the official chrome-use extension in Chrome, restart Chrome once, then run tools\smoke-browser-control.ps1"
