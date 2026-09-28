@@ -57,8 +57,21 @@ jobs:
             risk_class: risk,
             nonce: crypto.randomUUID()
           };
-          const pem = Buffer.from(process.env.PRIVATE_KEY_B64,'base64').toString('utf8');
-          const key = crypto.createPrivateKey(pem);
+          const rawKey = process.env.PRIVATE_KEY_B64.trim();
+          let key;
+          const attempts = [];
+          if (rawKey.includes('BEGIN PRIVATE KEY')) attempts.push(() => crypto.createPrivateKey(rawKey));
+          attempts.push(() => {
+            const decoded = Buffer.from(rawKey,'base64');
+            const text = decoded.toString('utf8');
+            if (text.includes('BEGIN PRIVATE KEY')) return crypto.createPrivateKey(text);
+            throw new Error('decoded value is not PEM');
+          });
+          attempts.push(() => crypto.createPrivateKey({key:Buffer.from(rawKey,'base64'),format:'der',type:'pkcs8'}));
+          for (const attempt of attempts) {
+            try { key = attempt(); break; } catch {}
+          }
+          if (!key) throw new Error('unsupported controller private key encoding');
           const signature = crypto.sign(null,Buffer.from(canonicalize(envelope)),key).toString('base64');
           fs.writeFileSync('command.signed.json',JSON.stringify({...envelope,signature}));
           NODE
