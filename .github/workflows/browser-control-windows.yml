@@ -27,6 +27,9 @@ jobs:
           $ErrorActionPreference = "Stop"
           $env:AGENT_BROWSER_VERSION = "v1.5.139"
           Invoke-RestMethod https://raw.githubusercontent.com/leeguooooo/chrome-use/main/install.ps1 | Invoke-Expression
+          $chromeUseDir = Join-Path $env:LOCALAPPDATA "Programs\chrome-use"
+          if (-not (Test-Path (Join-Path $chromeUseDir "chrome-use.exe"))) { throw "chrome-use missing after install" }
+          Add-Content $env:GITHUB_PATH $chromeUseDir
 
       - name: Verify CLI
         shell: pwsh
@@ -34,16 +37,16 @@ jobs:
           chrome-use --version
           chrome-use --help
 
-      - name: Verify core skill is available
+      - name: Verify installed agent skill
         shell: pwsh
         run: |
-          chrome-use skills get core | Out-Null
+          chrome-use doctor
 
-      - name: Record limitation
+      - name: Record validation
         shell: pwsh
         run: |
-          "Cloud validation PASS: install/CLI/core skill work on Windows." | Out-File browser-control-validation.txt
-          "Local ALFAROUQ extension/native-messaging connection remains a one-time machine-side step." | Out-File browser-control-validation.txt -Append
+          "Cloud Windows validation PASS: pinned installer, CLI, Chrome detection, native host diagnostics and bundled agent skill work." | Out-File browser-control-validation.txt
+          "Expected cloud-runner limitation: extension/native-messaging is not connected because the runner has no interactive local browser profile." | Out-File browser-control-validation.txt -Append
 
       - uses: actions/upload-artifact@v4
         with:
