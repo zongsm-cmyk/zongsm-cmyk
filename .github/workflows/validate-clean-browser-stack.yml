@@ -1,0 +1,76 @@
+name: Validate Clean Browser Stack
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - alfarouq-playwright-goose-v1
+    paths:
+      - "tools/setup-alfarouq-clean-browser-stack.ps1"
+      - ".github/workflows/validate-clean-browser-stack.yml"
+
+jobs:
+  validate-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse PowerShell setup script
+        shell: pwsh
+        run: |
+          $path = Join-Path $PWD "tools/setup-alfarouq-clean-browser-stack.ps1"
+          $tokens = $null
+          $errors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$tokens, [ref]$errors) | Out-Null
+          if ($errors.Count -gt 0) {
+            $errors | Format-List | Out-String | Write-Error
+            exit 1
+          }
+          Write-Host "PowerShell parse PASS"
+
+      - name: Validate Playwright MCP package
+        shell: pwsh
+        run: |
+          node --version
+          npm --version
+          $help = npx -y @playwright/mcp@latest --help 2>&1 | Out-String
+          if ($LASTEXITCODE -ne 0) { throw "Playwright MCP help failed." }
+          if ($help -notmatch "--extension") { throw "--extension flag not found." }
+          Write-Host "Playwright MCP CLI PASS"
+
+      - name: Download and validate pinned Goose Windows CLI
+        shell: pwsh
+        run: |
+          $url = "https://github.com/aaif-goose/goose/releases/download/v1.52.0/goose-x86_64-pc-windows-msvc.zip"
+          $zip = Join-Path $env:RUNNER_TEMP "goose.zip"
+          Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
+          $actual = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+          $expected = "13f51e2294a8c92ce440988beb1873ed688e33d8fc72c0f75755b2ed5b3d54bc"
+          if ($actual -ne $expected) { throw "Goose SHA256 mismatch: $actual" }
+          $dir = Join-Path $env:RUNNER_TEMP "goose"
+          Expand-Archive $zip $dir -Force
+          $goose = Get-ChildItem $dir -Recurse -Filter goose.exe | Select-Object -First 1
+          if (-not $goose) { throw "goose.exe not found" }
+          & $goose.FullName --version
+          $runHelp = & $goose.FullName run --help 2>&1 | Out-String
+          foreach ($flag in @("--with-extension","--max-tool-repetitions","--max-turns","--no-profile","--no-session","--instructions","--provider","--model")) {
+            if ($runHelp -notmatch [regex]::Escape($flag)) { throw "Missing Goose run flag: $flag" }
+          }
+          Write-Host "Goose CLI PASS"
+
+      - name: Validate architecture strings
+        shell: pwsh
+        run: |
+          $s = Get-Content -Raw "tools/setup-alfarouq-clean-browser-stack.ps1"
+          foreach ($needle in @(
+            "@playwright/mcp@latest --extension",
+            "PLAYWRIGHT_MCP_EXTENSION_TOKEN",
+            "Nanobrowser",
+            "GOOSE_PROVIDER",
+            "ollama",
+            "max-tool-repetitions 2",
+            "ONE BROWSER OWNER"
+          )) {
+            if ($s -notlike "*$needle*") { throw "Missing required architecture marker: $needle" }
+          }
+          Write-Host "Architecture markers PASS"
