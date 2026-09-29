@@ -136,11 +136,15 @@ Write-Host "Chrome profile: $profileDir" -ForegroundColor Green
 
 [Environment]::SetEnvironmentVariable("GOOSE_PROVIDER","ollama","User")
 [Environment]::SetEnvironmentVariable("GOOSE_MODEL",$Model,"User")
+[Environment]::SetEnvironmentVariable("GOOSE_MODE","auto","User")
+[Environment]::SetEnvironmentVariable("GOOSE_INPUT_LIMIT","16384","User")
 [Environment]::SetEnvironmentVariable("OLLAMA_HOST","http://127.0.0.1:11434","User")
 [Environment]::SetEnvironmentVariable("OLLAMA_CONTEXT_LENGTH","16384","User")
 [Environment]::SetEnvironmentVariable("PLAYWRIGHT_MCP_PROFILE_DIR_NAME",$profileDir,"User")
 $env:GOOSE_PROVIDER = "ollama"
 $env:GOOSE_MODEL = $Model
+$env:GOOSE_MODE = "auto"
+$env:GOOSE_INPUT_LIMIT = "16384"
 $env:OLLAMA_HOST = "http://127.0.0.1:11434"
 $env:OLLAMA_CONTEXT_LENGTH = "16384"
 $env:PLAYWRIGHT_MCP_PROFILE_DIR_NAME = $profileDir
@@ -222,9 +226,11 @@ $AgentCmd = @"
 title ALFAROUQ Browser Agent
 set "GOOSE_PROVIDER=ollama"
 set "GOOSE_MODEL=$Model"
+set "GOOSE_MODE=auto"
+set "GOOSE_INPUT_LIMIT=16384"
 set "OLLAMA_HOST=http://127.0.0.1:11434"
 set "OLLAMA_CONTEXT_LENGTH=16384"
-"$GooseExe" session --no-profile --with-extension "playwright:npx -y @playwright/mcp@latest --extension" --max-tool-repetitions 2 --max-turns 60 --system "Use Playwright as the only browser owner. Reuse the existing Chrome profile. Never use coordinate clicking. Stop for MFA, CAPTCHA, identity verification, real payment confirmation, or irreversible personal decisions. Never repeat the same failed browser action more than twice."
+"$GooseExe" session --no-profile --with-extension "playwright:npx -y @playwright/mcp@latest --extension" --max-tool-repetitions 2 --max-turns 60
 "@
 Set-Content -Path (Join-Path $Root "ALFAROUQ_BROWSER_AGENT.cmd") -Value $AgentCmd -Encoding ASCII
 
@@ -260,6 +266,8 @@ $LemonCmd = @"
 title ALFAROUQ - Lemon Squeezy
 set "GOOSE_PROVIDER=ollama"
 set "GOOSE_MODEL=$Model"
+set "GOOSE_MODE=auto"
+set "GOOSE_INPUT_LIMIT=16384"
 set "OLLAMA_HOST=http://127.0.0.1:11434"
 set "OLLAMA_CONTEXT_LENGTH=16384"
 "$GooseExe" run --provider ollama --model "$Model" --no-profile --with-extension "playwright:npx -y @playwright/mcp@latest --extension" --max-tool-repetitions 2 --max-turns 50 --no-session -i "$Tasks\lemonsqueezy.md"
