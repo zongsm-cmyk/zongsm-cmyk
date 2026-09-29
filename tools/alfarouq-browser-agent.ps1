@@ -178,7 +178,7 @@ try {
     Step ("Automation step " + $step)
     $snap = Snapshot
     $a = AskLocalModel -Model $Model -Snapshot $snap -History $history
-    Write-Host ("Action: " + $a.action + " — " + $a.reason)
+    Write-Host ("Action: " + $a.action + " - " + $a.reason)
 
     if ($a.action -eq "done") {
       Write-Host ""
