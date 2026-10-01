@@ -59,6 +59,7 @@ Current case studies:
 - **[Connector-First Outreach Operations](https://askoure-systems.floot.app/proof/outreach-ops)** — research → enrichment → one-to-one outreach → booking CTA → reply/bounce monitoring, with clear boundaries between sent state and actual conversion.
 - **[Recovery Engineering](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/proofs/recovery-engineering.md)** — evidence-led incident isolation that preserves known-good controls instead of rebuilding a healthy core.
 - **[Deployment Runtime Verification](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/proofs/deployment-runtime-verification.md)** — a real cloud deployment case showing why saved configuration, deployment status and actual serving runtime must be verified separately.
+- **[LLM Structured Output Reliability](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/proofs/llm-structured-output-reliability.md)** — a focused case study on safe extraction, strict Pydantic contracts, explicit failure states and regression testing for model outputs.
 
 Private implementation details, secrets, session identifiers and proprietary control-stack internals are intentionally not published.
 
