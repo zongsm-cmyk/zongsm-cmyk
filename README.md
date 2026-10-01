@@ -57,7 +57,7 @@ Current case studies:
 
 - **[Automation Reliability Proof](https://askoure-systems.floot.app/proof/reliability)** — verified cloud-to-browser acceptance facts, serialization, persistent session continuity, fail-closed binding checks and regression gating.
 - **[Connector-First Outreach Operations](https://askoure-systems.floot.app/proof/outreach-ops)** — research → enrichment → one-to-one outreach → booking CTA → reply/bounce monitoring, with clear boundaries between sent state and actual conversion.
-- **Recovery Engineering** — evidence-led incident isolation that preserves known-good controls instead of rebuilding a healthy core.
+- **[Recovery Engineering](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/proofs/recovery-engineering.md)** — evidence-led incident isolation that preserves known-good controls instead of rebuilding a healthy core.
 
 Private implementation details, secrets, session identifiers and proprietary control-stack internals are intentionally not published.
 
