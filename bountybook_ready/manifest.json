@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-10-02",
+  "tasks": [
+    {
+      "id": "733d4731-7e60-4bb8-9233-ba3771c779d3",
+      "file": "urlcheck.go",
+      "reward_usdc": 6,
+      "status": "compiled_pass"
+    },
+    {
+      "id": "734626a0-26b5-478b-b9cf-fb575aea8adc",
+      "file": "event_bus.ts",
+      "reward_usdc": 5,
+      "status": "acceptance_pass"
+    },
+    {
+      "id": "87b131ee-7102-4d69-a99d-08cff67e9c1a",
+      "file": "state_machine.py",
+      "reward_usdc": 5,
+      "status": "acceptance_pass"
+    },
+    {
+      "id": "dc07cac3-ba35-4f13-965e-4fa8ace642a5",
+      "file": "trie.py",
+      "reward_usdc": 4,
+      "status": "acceptance_pass"
+    },
+    {
+      "id": "0a1c6ae8-2034-4c3a-a13b-e7d6381aa5aa",
+      "file": "merge_csv.py",
+      "reward_usdc": 3.5,
+      "status": "acceptance_pass"
+    }
+  ],
+  "note": "Re-fetch live BountyBook status and rerun published acceptance test immediately before claim/submission."
+}
