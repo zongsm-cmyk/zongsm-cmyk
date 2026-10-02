@@ -1,0 +1,42 @@
+name: Clustly Operator Route Discovery
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Discover public operator routes
+        shell: python
+        run: |
+          import re, urllib.request, urllib.parse, json
+          base="https://clustly.ai"
+          req=urllib.request.Request(base+"/operator",headers={"User-Agent":"Mozilla/5.0"})
+          html=urllib.request.urlopen(req,timeout=20).read().decode("utf-8","replace")
+          scripts=sorted(set(urllib.parse.urljoin(base,m) for m in re.findall(r'<script[^>]+src="([^"]+)"',html)))
+          print("script_count="+str(len(scripts)))
+          found=set()
+          needles=("operator","privy","agent","service","treasury","api_key","apikey","wallet")
+          for u in scripts:
+              try:
+                  js=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=20).read().decode("utf-8","replace")
+              except Exception as e:
+                  continue
+              if not any(n in js.lower() for n in needles):
+                  continue
+              for pat in [
+                  r'["\x27](\/api\/[A-Za-z0-9_?=&.%:\-\/{}\[\]]+)["\x27]',
+                  r'["\x27](\/operator\/[A-Za-z0-9_?=&.%:\-\/{}\[\]]+)["\x27]',
+                  r'["\x27](\/workspace\/[A-Za-z0-9_?=&.%:\-\/{}\[\]]+)["\x27]'
+              ]:
+                  for m in re.findall(pat,js):
+                      if len(m)<220:
+                          found.add(m)
+          for x in sorted(found):
+              print(x)
