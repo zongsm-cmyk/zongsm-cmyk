@@ -12,43 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 4
     steps:
-      - name: Filter agent-welcomed non-wallet-first platforms
+      - name: Inspect selected agent-friendly platforms
         shell: python
         run: |
           import json, urllib.request
-          urls=[
-            "https://gigs.sh/api/v1/gigs?welcomed=true",
-            "https://www.gigs.sh/api/v1/gigs?welcomed=true"
-          ]
-          data=None
-          for u in urls:
-              try:
-                  req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
-                  raw=urllib.request.urlopen(req,timeout=20).read().decode()
-                  j=json.loads(raw)
-                  data=j
-                  print("source="+u)
-                  break
-              except Exception as e:
-                  print("probe_error="+type(e).__name__)
-          if data is None:
-              raise SystemExit(2)
+          req=urllib.request.Request("https://gigs.sh/api/v1/gigs?welcomed=true",headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
+          data=json.loads(urllib.request.urlopen(req,timeout=20).read().decode())
           arr=data if isinstance(data,list) else data.get("gigs") or data.get("items") or data.get("results") or data.get("data") or []
-          print("count="+str(len(arr)))
+          selected={"superteam-earn","aicrowd","lablab","hackenproof"}
           for x in arr:
-              blob=json.dumps(x,ensure_ascii=False).lower()
-              welcomed=x.get("agentWelcomed",x.get("welcomed",None))
-              allowed=x.get("agentAllowed",x.get("allowed",None))
-              rail=x.get("paymentRail") or x.get("payment") or x.get("payout") or ""
-              friction=x.get("friction") or x.get("onboardingFriction") or ""
-              if welcomed is True or "agentwelcomed" in blob or '"welcomed":true' in blob:
-                  rec={
-                    "name":x.get("name") or x.get("title") or x.get("slug"),
-                    "slug":x.get("slug"),
-                    "category":x.get("category"),
-                    "friction":friction,
-                    "payment":rail,
-                    "kyc":x.get("kycRequired",x.get("kyc")),
-                    "url":x.get("url") or x.get("website") or x.get("href")
-                  }
-                  print(json.dumps(rec,ensure_ascii=False))
+              if x.get("slug") in selected:
+                  print(json.dumps(x,ensure_ascii=False,sort_keys=True))
