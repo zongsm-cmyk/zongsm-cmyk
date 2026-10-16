@@ -63,6 +63,15 @@ Current case studies:
 
 Private implementation details, secrets, session identifiers and proprietary control-stack internals are intentionally not published.
 
+## Developer kits
+
+The public proofs above have packaged commercial versions for teams that want the runnable implementation, tests, documentation, and handoff material rather than rebuilding the reliability layer from scratch.
+
+- **[LLM Reliability Rescue Kit — $19](https://mhamedasskoure.gumroad.com/l/llm-reliability-rescue-kit)** — Python/FastAPI structured-output validation, strict Pydantic contracts, CLI tooling, regression corpus, tests, CI, and production guidance.
+- **[Agent Runaway Guard Kit — $24](https://mhamedasskoure.gumroad.com/l/agent-runaway-guard-kit)** — local Python guardrails for repeated tool calls, cyclic loops, retry storms, token/API-cost boundaries, replay testing, and CI regression gates.
+
+Both kits are one-time purchases and are intended for adaptation inside personal, internal, or client projects according to their included licenses.
+
 ## How I approach automation and rescue work
 
 1. Reproduce or measure one concrete problem.
@@ -90,6 +99,8 @@ For a small automation or reliability problem, I can start with one bounded work
 ## Work with me
 
 - **Askoure Systems:** https://askoure-systems.floot.app
+- **LLM Reliability Rescue Kit:** https://mhamedasskoure.gumroad.com/l/llm-reliability-rescue-kit
+- **Agent Runaway Guard Kit:** https://mhamedasskoure.gumroad.com/l/agent-runaway-guard-kit
 - **Automation Discovery:** https://automation-discovery.floot.app
 - **ROI Calculator:** https://automation-roi-calculator.floot.app
 - **Upwork:** https://www.upwork.com/freelancers/~01f95546c501a4254e
