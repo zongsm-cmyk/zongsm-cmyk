@@ -63,6 +63,13 @@ Current case studies:
 
 Private implementation details, secrets, session identifiers and proprietary control-stack internals are intentionally not published.
 
+## Free practical resources
+
+- **[Landing Page Self-Audit — free interactive tool](https://askoure-systems.floot.app/tools/landing-page-audit)** — a ten-point self-check of message clarity, mobile readiness, working forms, privacy and conversion measurement, with a personalized fix list. No login required.
+- **[How to Create a Free Lead-Capture Page in systeme.io](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page)** — independent step-by-step setup guide with a free downloadable copy-and-QA kit. The guide discloses its affiliate relationship.
+
+These are practical educational resources, not claims of measured conversion gains.
+
 ## Developer kits
 
 The public proofs above have packaged commercial versions for teams that want the runnable implementation, tests, documentation, and handoff material rather than rebuilding the reliability layer from scratch.
