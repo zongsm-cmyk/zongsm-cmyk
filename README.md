@@ -67,6 +67,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 - **[Landing Page Self-Audit — free interactive tool](https://askoure-systems.floot.app/tools/landing-page-audit)** — a ten-point self-check of message clarity, mobile readiness, working forms, privacy and conversion measurement, with a personalized fix list. No login required.
 - **[How to Create a Free Lead-Capture Page in systeme.io](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page)** — independent step-by-step setup guide with a free downloadable copy-and-QA kit. The guide discloses its affiliate relationship.
+- **[Créer une page de capture gratuite avec systeme.io (français)](https://askoure-systems.floot.app/fr/guide-page-capture-gratuite-systeme-io)** — guide pratique en français, exemples pour indépendants et entreprises de services, modèle et checklist gratuits. L'article précise les liens d'affiliation.
 
 These are practical educational resources, not claims of measured conversion gains.
 
