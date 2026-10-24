@@ -65,6 +65,10 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+> **For small-business operators comparing funnel/email plans:** [See the official systeme.io plan comparison](https://systeme.io/fr/pricing?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b). This is a disclosed affiliate link: Askoure Systems may earn a commission on a qualifying purchase, at no extra cost to you. You can start with the free plan instead.
+
+
+
 - **[شرح عربي: إنشاء صفحة مجانية لجذب العملاء باستخدام systeme.io](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/systeme-free-funnel-ar.md)** — خطوات عملية بالعربية وقائمة تحقق مجانية لأصحاب المشاريع الصغيرة. يتضمن رابط إحالة مع إفصاح واضح.
 
 - **[Open-source Landing Page Release Checker (Python)](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/LANDING_PAGE_QA_README.md)** — a bounded, read-only 13-check command-line tool for page metadata, server rendering, sitemap discovery, affiliate disclosure, and external-link hygiene; includes executable offline fixtures.
