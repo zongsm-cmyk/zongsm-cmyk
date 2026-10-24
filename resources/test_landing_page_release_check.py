@@ -46,3 +46,16 @@ def test_wrong_canonical():
     broken = DATA | {"text": DOC.replace('https://example.com/guide"', 'https://example.com/old"')}
     out = audit(URL, broken, AUX)
     assert not [c for c in out["checks"] if c["name"] == "canonical"][0]["passed"]
+
+if __name__ == "__main__":
+    cases = [
+        test_passing,
+        test_missing_disclosure_and_rel,
+        test_javascript_shell_is_not_accepted,
+        test_sitemap_not_listed,
+        test_wrong_canonical,
+    ]
+    for case in cases:
+        case()
+        print("PASS", case.__name__)
+    print(f"{len(cases)}/{len(cases)} offline fixture tests passed.")
