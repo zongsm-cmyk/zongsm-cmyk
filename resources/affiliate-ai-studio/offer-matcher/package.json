@@ -1,0 +1,1 @@
+{"name":"askoure-offer-matcher-prototype","private":true,"type":"module","version":"0.1.0","description":"Zero-API Arabic affiliate buyer fit quiz prototype","scripts":{"test":"node --test logic.test.mjs","serve":"python3 -m http.server 8787"}}
