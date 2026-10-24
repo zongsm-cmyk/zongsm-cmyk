@@ -65,6 +65,8 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+- **[Open-source Landing Page Release Checker (Python)](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/LANDING_PAGE_QA_README.md)** — a bounded, read-only 13-check command-line tool for page metadata, server rendering, sitemap discovery, affiliate disclosure, and external-link hygiene; includes executable offline fixtures.
+
 - **[Landing Page Self-Audit — free interactive tool](https://askoure-systems.floot.app/tools/landing-page-audit)** — a ten-point self-check of message clarity, mobile readiness, working forms, privacy and conversion measurement, with a personalized fix list. No login required.
 - **[How to Create a Free Lead-Capture Page in systeme.io](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page)** — independent step-by-step setup guide with a free downloadable copy-and-QA kit. The guide discloses its affiliate relationship.
 - **[Créer une page de capture gratuite avec systeme.io (français)](https://askoure-systems.floot.app/fr/guide-page-capture-gratuite-systeme-io)** — guide pratique en français, exemples pour indépendants et entreprises de services, modèle et checklist gratuits. L'article précise les liens d'affiliation.
