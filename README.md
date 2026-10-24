@@ -65,6 +65,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+- **[اختر أداة مشروعك في 4 أسئلة — اختبار عربي مجاني](https://askoure-systems.floot.app/tools/choose-business-tool)** — أداة تفاعلية تساعد المستقلين وأصحاب المشاريع على تحديد الحاجة بين صفحة هبوط وجمع عملاء والبريد والأتمتة والصوت/الفيديو، مع توصيات حيادية قبل شراء أي اشتراك. لا تجمع بيانات اتصال؛ فقط رابط systeme.io الشخصي المؤكد يظهر عند الحاجة الملائمة، مع إفصاح.
 - **[دليل عربي عملي: إنشاء صفحة مجانية لجمع طلبات العملاء](https://askoure-systems.floot.app/ar/systeme-io-free-funnel)** — خمس خطوات ومثالان قابلان للتكييف لخدمات التصميم وصيانة الحواسيب، مع قائمة فحص مجانية بلا تسجيل. يحتوي الدليل على رابط أفيلييت مُفصح عنه وقد نحصل على عمولة عند شراء مؤهل.
 - **[قائمة الفحص العربية المجانية لصفحة جمع العملاء](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/checklist-landing-page-ar.md)** — خمس خطوات لاختبار رسالة الصفحة والنموذج والتسليم على الهاتف، دون اشتراك أو شراء.
 
