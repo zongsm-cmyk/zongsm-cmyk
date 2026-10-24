@@ -65,6 +65,8 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+- **[شرح عربي: إنشاء صفحة مجانية لجذب العملاء باستخدام systeme.io](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/systeme-free-funnel-ar.md)** — خطوات عملية بالعربية وقائمة تحقق مجانية لأصحاب المشاريع الصغيرة. يتضمن رابط إحالة مع إفصاح واضح.
+
 - **[Open-source Landing Page Release Checker (Python)](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/LANDING_PAGE_QA_README.md)** — a bounded, read-only 13-check command-line tool for page metadata, server rendering, sitemap discovery, affiliate disclosure, and external-link hygiene; includes executable offline fixtures.
 
 - **[Landing Page Self-Audit — free interactive tool](https://askoure-systems.floot.app/tools/landing-page-audit)** — a ten-point self-check of message clarity, mobile readiness, working forms, privacy and conversion measurement, with a personalized fix list. No login required.
