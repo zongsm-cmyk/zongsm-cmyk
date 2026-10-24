@@ -115,7 +115,7 @@ def audit(url, fetched=None, aux=None):
         ("robots", robots_ok, "robots.txt is accessible"),
         ("sitemap", sitemap_ok, "sitemap.xml is accessible"),
         ("sitemap_contains_url", sitemap_ok and target_url in aux["sitemap"]["text"], "Sitemap lists the page"),
-        ("affiliate_disclosure", not affiliate_links or "affiliate" in data["text"].lower() or "affilié" in data["text"].lower(), "Affiliate relationship is disclosed where applicable"),
+        ("affiliate_disclosure", not affiliate_links or ("affiliate" in data["text"].lower() or "affilié" in data["text"].lower() or ("إفصاح" in data["text"] and "عمولة" in data["text"])), "Affiliate relationship is disclosed where applicable"),
         ("affiliate_link_rel", not wrong_rel, "Affiliate links use rel=sponsored"),
         ("safe_external_tabs", not unsafe_blank, "External tabs use rel=noopener"),
     ]
