@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {recommend,VERIFIED_REFERRAL,QUESTIONS} from './logic.mjs';
+test('exactly four questions',()=>assert.equal(QUESTIONS.length,4));
+test('landing page budget free recommends guide appropriate SaaS',()=>{const r=recommend({goal:'landing',budget:'free',experience:'new'});assert.equal(r.kind,'systeme');assert.match(r.reason,/المجانية/)});
+test('lead generation recommends documented landing page',()=>assert.equal(recommend({goal:'leads'}).kind,'systeme'));
+test('email offers category only without invented affiliate link',()=>assert.equal(recommend({goal:'email'}).kind,'category'));
+test('workflow automation has no invented affiliate link',()=>assert.equal(recommend({goal:'automation'}).kind,'category'));
+test('media has no invented affiliate link',()=>assert.equal(recommend({goal:'media'}).kind,'category'));
+test('unknown goal does not force a purchase',()=>assert.equal(recommend({goal:'other'}).kind,'none'));
+test('affiliate URL is our only known personal systeme.io link',()=>assert.equal(VERIFIED_REFERRAL,'https://systeme.io/fr?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b'));
