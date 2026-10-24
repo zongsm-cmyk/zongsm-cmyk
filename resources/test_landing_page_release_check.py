@@ -47,6 +47,25 @@ def test_wrong_canonical():
     out = audit(URL, broken, AUX)
     assert not [c for c in out["checks"] if c["name"] == "canonical"][0]["passed"]
 
+def test_arabic_disclosure_supported():
+    arabic = DATA | {"text": DOC.replace(
+        "Affiliate disclosure: we may earn a commission.",
+        "إفصاح عن روابط الإحالة: قد نحصل على عمولة عند شراء مؤهل."
+    )}
+    out = audit(URL, arabic, AUX)
+    assert out["passed"] == 13, out
+
+
+def test_arabic_generic_mention_is_not_disclosure():
+    generic = DATA | {"text": DOC.replace(
+        "Affiliate disclosure: we may earn a commission.",
+        "هذه أداة مجانية تساعدك في اختيار برنامج لإحالة زوار الصفحة."
+    )}
+    out = audit(URL, generic, AUX)
+    failed = {c["name"] for c in out["checks"] if not c["passed"]}
+    assert "affiliate_disclosure" in failed, failed
+
+
 if __name__ == "__main__":
     cases = [
         test_passing,
@@ -54,6 +73,8 @@ if __name__ == "__main__":
         test_javascript_shell_is_not_accepted,
         test_sitemap_not_listed,
         test_wrong_canonical,
+        test_arabic_disclosure_supported,
+        test_arabic_generic_mention_is_not_disclosure,
     ]
     for case in cases:
         case()
