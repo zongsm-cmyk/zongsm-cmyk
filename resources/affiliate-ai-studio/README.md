@@ -2,6 +2,14 @@
 
 **Purpose:** produce qualified buyers and recurring affiliate commissions through independent buyer-intent research, evidence-backed software education, and portable tools. Does not replace the existing website.
 
+## Verified working prototype (2026-10-24)
+
+- **[Offer Matcher source](./offer-matcher/)** — a four-question Arabic RTL tool with deterministic category recommendations, no runtime AI or billing requirement.
+- **[Prototype README / AI Studio GitHub import path](./offer-matcher/README.md)** — exact instructions to load the folder from our GitHub repository into AI Studio Build Mode.
+- **Tests performed outside AI Studio:** 8/8 Node tests PASS; isolated headless Chromium interactive mobile flow PASS, including a personal systeme.io referral/disclosure and a non-affiliate recommendation with no misleading partner link.
+- **NOT DONE:** an authenticated Google AI Studio project import/build in the owner's account. Completing that requires a valid signed-in browser session. Work mode cloud browser is the preferred permitted route when available; do not use the held ALFAROUQ Playwright browser or paid TinyFish without credit authorization. Our free-tier TinyFish wallet had a negative balance at the time of review.
+- **Zero new costs**, no changes to the public Floot website.
+
 ## Start now (the two verified official entry points)
 
 1. **Profit-first research (recommended first):** [Open AI Studio Chat](https://aistudio.google.com/prompts/new_chat?model=gemini-3.5-flash), enable Google Search grounding/URL Context if available within the free project, then copy the full **[Growth Operator Mission](./GROWTH_OPERATOR_PROMPT.md)**. This calls for real market evidence, five offers, three original publication drafts and an on-page conversion audit.
