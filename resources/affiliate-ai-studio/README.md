@@ -2,6 +2,10 @@
 
 **Purpose:** produce qualified buyers and recurring affiliate commissions through independent buyer-intent research, evidence-backed software education, and portable tools. Does not replace the existing website.
 
+## Production integration (2026-10-24)
+
+The existing GitHub/AI Studio **Askoure Offer Matcher** was ported with bounded changes to the existing public Floot site and is now available at **[Askoure — اختر أداة مشروعك](https://askoure-systems.floot.app/tools/choose-business-tool)**. This is a public deterministic visitor self-selection tool, not a deployed AI Studio project nor an AI API integration. It uses the one verified systeme.io affiliate URL only for appropriate use cases and discloses the relationship. Floot TypeScript and Jasmine tests passed; publication and server-rendered HTML were checked. **No traffic, paid referrals or commission results are claimed.**
+
 ## Verified working prototype (2026-10-24)
 
 - **[Offer Matcher source](./offer-matcher/)** — a four-question Arabic RTL tool with deterministic category recommendations, no runtime AI or billing requirement.
