@@ -65,7 +65,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
-- **[دليل عربي عملي: إنشاء صفحة مجانية لجمع طلبات العملاء](https://askoure-systems.floot.app/ar/systeme-io-free-funnel)** — خمس خطوات، قائمة فحص عربية مباشرة، شرح مناسب للمستقلين وأصحاب المشاريع الصغيرة. يحتوي الدليل على رابط أفيلييت مُفصح عنه وقد نحصل على عمولة عند شراء مؤهل.
+- **[دليل عربي عملي: إنشاء صفحة مجانية لجمع طلبات العملاء](https://askoure-systems.floot.app/ar/systeme-io-free-funnel)** — خمس خطوات ومثالان قابلان للتكييف لخدمات التصميم وصيانة الحواسيب، مع قائمة فحص مجانية بلا تسجيل. يحتوي الدليل على رابط أفيلييت مُفصح عنه وقد نحصل على عمولة عند شراء مؤهل.
 - **[قائمة الفحص العربية المجانية لصفحة جمع العملاء](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/checklist-landing-page-ar.md)** — خمس خطوات لاختبار رسالة الصفحة والنموذج والتسليم على الهاتف، دون اشتراك أو شراء.
 
 
