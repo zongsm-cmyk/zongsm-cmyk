@@ -103,6 +103,12 @@ Both kits are one-time purchases and are intended for adaptation inside personal
 6. Lock behavior with focused regression tests.
 7. Document the handoff and keep known-good controls intact.
 
+## Small paid Python pilot
+
+**[One reproducible Python bug + focused fix + regression tests — $35 USD](resources/fde/python-bugfix-pilot.md)**
+
+Written, asynchronous delivery through a PR or patch. Scope, acceptance check, delivery date and payment route are agreed before work; PayPal preferred. [Inspect two recent open-source contributions and their CI evidence](resources/fde/python-bugfix-pilot.md#inspect-the-engineering-evidence). AI assistance is disclosed.
+
 ## Current commercial focus
 
 I am open to remote contract, paid pilot, retainer or full-time work involving:

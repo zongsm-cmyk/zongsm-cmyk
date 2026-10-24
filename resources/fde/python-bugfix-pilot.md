@@ -1,0 +1,41 @@
+# One Python bug, one tested fix — $35 USD
+
+A small, fixed-price pilot from Mhamed Askoure / Askoure Systems.
+
+## What you receive
+
+For one agreed, reproducible Python bug in an existing public GitHub repository:
+
+- A failing reproduction or regression test.
+- A focused fix, normally in no more than three production files.
+- The relevant regression tests and exact commands/results.
+- A pull request or patch with a short explanation and any remaining limitations.
+
+Examples: an error path that leaves files modified, a checker mistaking process failure for success, JSON validation, or a retry/timeout handling defect.
+
+## Agree the result before work
+
+Send a public issue link, expected behavior, reproduction steps and the existing test command. Start with a synthetic example if the real input is private. We confirm feasibility, the target revision, scope, objective acceptance check and delivery date in writing before starting. The $35 price applies only after that scope is agreed; larger work receives a separate quote.
+
+Payment: $35 USD after the agreed acceptance check passes, through a mutually supported route; PayPal preferred. Any provider fees and currency conversion are agreed before work. Where a freelance platform introduced the engagement, its payment rules apply.
+
+One in-scope correction is included. The pilot excludes production deployment, paid API calls, third-party purchases, security certification and a new feature or application.
+
+## Inspect the engineering evidence
+
+These are open-source contribution examples, not paid client testimonials:
+
+| Contribution | Reproduction evidence | Published verification |
+| --- | --- | --- |
+| [Go-Hybrid #1598: checker failure is not rejection evidence](https://github.com/limitlessprojects/Go-Hybrid/pull/1598) | Four new cases fail on the original implementation; all eight pass after the fix | [Fork CI: quick and compiler passed](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40122887982) |
+| [Go-Hybrid #1604: restore candidate files after exceptional exits](https://github.com/limitlessprojects/Go-Hybrid/pull/1604) | Five new cases fail on the original implementation; all seven pass after the fix | [Fork CI: quick and compiler passed](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40123982036) |
+
+Both PRs were open and awaiting upstream review when this page was published on 24 October 2026. Passing fork CI does not establish an upstream merge or award.
+
+Implementation, documentation and technical checks use disclosed AI assistance under Mhamed's authorization. Independent human engineering review is not included.
+
+## Request a fit check
+
+[Open an enquiry](https://github.com/zongsm-cmyk/zongsm-cmyk/issues/new?title=Python%20bugfix%20pilot%20enquiry) with the public repository, bug and expected result, or contact through the existing [Upwork profile](https://www.upwork.com/freelancers/~01f95546c501a4254e).
+
+Do not post credentials, payment details, private customer data or private code in a public issue. An enquiry creates no payment or delivery obligation.
