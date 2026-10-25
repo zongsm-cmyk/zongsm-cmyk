@@ -18,6 +18,20 @@ If you run a one-person service business, creator newsletter, social-media shop,
 
 **Affiliate disclosure:** At publication we have one confirmed affiliate relationship in this comparison: **systeme.io**. If you make a qualifying purchase after using its marked link, Askoure Systems may earn a commission at no extra cost to you. The other vendor links are ordinary official links; we have not claimed any referral commissions or partner status for them. Placement is based on the job-to-be-done, not on commission rate.
 
+## When is a paid funnel subscription justified? (systeme.io example)
+
+**Start free when possible.** As of 25 October 2026, the vendor's public plan comparison lists **3 funnels, up to 2,000 contacts, and 1 automation rule** on the Free tier. This can be sufficient for a solo professional testing one real offer. Do not upgrade merely because a higher plan exists.
+
+**Consider a paid plan only for a measured constraint.** The Startup tier currently lists **up to 10 funnels, 5,000 contacts, and 10 automation rules**. Paid capacity can make sense if you have already validated an offer and genuinely exceed the free tier, or need a feature unavailable in your present plan. Always verify the current limits and local price on the official vendor page before buying; they can change.
+
+| Your real situation | Lower-risk next action | Upgrade trigger to verify |
+| --- | --- | --- |
+| No paying customers or reliable quote requests yet | Publish one clear offer and test a working lead form on Free | None yet. Improving the offer beats buying more automation. |
+| A service business with a functioning inquiry flow | Check mobile submission, consent, notification and follow-up with authorized test data | Only when actual contact/funnel/workflow needs exceed the current plan. |
+| Several proven offers and more than one useful follow-up sequence | Compare the exact feature limits and total annual cost with alternatives | A clear operational bottleneck **and** a measurable benefit from upgrading. |
+
+**Practical 10-minute test before paying:** Submit your own non-production enquiry on mobile, confirm the message arrives, check the follow-up, then review how many *real* contacts and funnels you currently use. This is functional QA, not a promise that a software subscription will generate customers. If you have a fit, the disclosed **systeme.io affiliate link in the first comparison row** takes you to the vendor; clicking alone does not mean Askoure earned a commission.
+
 ## The five-minute buyer test
 
 1. **Specify a measurable task:** e.g. “capture quote requests on a mobile-friendly page,” rather than “improve marketing.”
