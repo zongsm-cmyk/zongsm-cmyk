@@ -1,0 +1,35 @@
+name: FDE CRM offline regression tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "resources/fde/crm-webhook-proof/**"
+      - ".github/workflows/fde-crm-proof-tests.yml"
+  pull_request:
+    paths:
+      - "resources/fde/crm-webhook-proof/**"
+      - ".github/workflows/fde-crm-proof-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Checkout read-only source
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run 18 offline unit tests (no credentials or external services)
+        working-directory: resources/fde/crm-webhook-proof
+        run: python -m unittest discover -s tests -v
