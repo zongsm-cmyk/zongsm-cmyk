@@ -4,6 +4,8 @@
 
 I build practical automation around Python/FastAPI, REST APIs and webhooks, structured LLM outputs, workflow orchestration, browser/document automation, cloud deployment, validation, retries, idempotency and regression testing.
 
+**For founders & small-business operators:** [Free 4-question tool finder — find the right next step before paying for marketing software](https://askouresystems.com/en/choose-business-tool?src=github_profile). No sign-up; recommendations are based on your business need, with affiliate disclosure when relevant.
+
 ## What I work on
 
 - AI workflow automation and integration
