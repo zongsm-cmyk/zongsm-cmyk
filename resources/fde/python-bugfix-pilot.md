@@ -42,6 +42,8 @@ The **[Offline CRM webhook reliability proof](crm-webhook-proof/README.md)** rep
 
 ## Request a fit check
 
+**Fastest route:** [Open the structured pilot enquiry form](https://github.com/zongsm-cmyk/zongsm-cmyk/issues/new?template=paid-python-bugfix.yml). It asks for a public bug link, a redacted reproduction, an objective acceptance test, and desired scope; it does **not** require a payment or constitute a contract.
+
 [Open an enquiry](https://github.com/zongsm-cmyk/zongsm-cmyk/issues/new?title=Python%20bugfix%20pilot%20enquiry) with the public repository, bug and expected result, or contact through the existing [Upwork profile](https://www.upwork.com/freelancers/~01f95546c501a4254e).
 
 Do not post credentials, payment details, private customer data or private code in a public issue. An enquiry creates no payment or delivery obligation.
