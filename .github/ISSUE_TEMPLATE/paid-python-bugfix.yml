@@ -1,0 +1,82 @@
+name: Paid Python bug-fix fit check
+description: Request a scope check for one reproducible Python bug. No obligation or upfront fee to submit.
+title: "[Pilot enquiry] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a **public GitHub issue**. Post only public repository links and fictional or redacted examples.
+        **Never post credentials, access tokens, customer emails, real CVs, health data, API keys, or private code.**
+        Scope: one reproducible bug in an existing **public Python repository**. The advertised USD $35 price applies only after written agreement on acceptance, delivery and payout; this form does not create a contract.
+        If you cannot share a safe reproduction publicly, use the existing linked Upwork profile instead.
+  - type: input
+    id: repo_link
+    attributes:
+      label: Public repository or issue URL
+      description: Public GitHub URL only. Do not link to private client materials.
+      placeholder: https://github.com/owner/repo/issues/123
+    validations:
+      required: true
+  - type: dropdown
+    id: task_kind
+    attributes:
+      label: Work category
+      options:
+        - JSON or CSV parsing and validation
+        - API or webhook error handling
+        - File state or rollback defect
+        - Regression test / checker defect
+        - Other reproducible Python bug
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Actual behavior and reproduction
+      description: Minimal steps, command and sanitized error text; no private customer data.
+      placeholder: |
+        1. Run this command using a fictional fixture: ...
+        2. Observed: ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / acceptance check
+      description: What exact output or test result would count as fixed?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Runtime and existing test command
+      description: Python version, operating system and an existing test command (if known).
+      placeholder: Python 3.12; pytest -q
+    validations:
+      required: false
+  - type: dropdown
+    id: scope_budget
+    attributes:
+      label: Expected scope
+      description: Choosing an option is not a payment or contract.
+      options:
+        - One small public-Python bug; request the $35 pilot fit check
+        - Larger integration or private system; request a separate quotation
+        - Unsure; please clarify the scope
+    validations:
+      required: true
+  - type: input
+    id: timing
+    attributes:
+      label: Desired delivery timeframe
+      description: Starts only after written scope, acceptance and payment terms.
+      placeholder: e.g. this week, flexible
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_safety
+    attributes:
+      label: Public-data and agreement confirmation
+      options:
+        - label: I have redacted personal and confidential data, and understand this enquiry is not a contract or payment agreement.
+          required: true
