@@ -90,6 +90,8 @@ Private implementation details, secrets, session identifiers and proprietary con
 - **[How to Create a Free Lead-Capture Page in systeme.io](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page)** — independent step-by-step setup guide with a free downloadable copy-and-QA kit. The guide discloses its affiliate relationship.
 - **[Créer une page de capture gratuite avec systeme.io (français)](https://askoure-systems.floot.app/fr/guide-page-capture-gratuite-systeme-io)** — guide pratique en français, exemples pour indépendants et entreprises de services, modèle et checklist gratuits. L'article précise les liens d'affiliation.
 
+- **[Free 4×6 / 5×7 printable art printing guide](resources/etsy/small-printable-art-printing-guide.md)** — avoid accidental cropping, choose the matching JPG, understand DPI-versus-image-detail, and see the current [ALFAROUQWorks Etsy shop](https://www.etsy.com/shop/ALFAROUQWorks). Digital downloads only; current shop availability should be checked on Etsy.
+
 These are practical educational resources, not claims of measured conversion gains.
 
 ## Developer kits
