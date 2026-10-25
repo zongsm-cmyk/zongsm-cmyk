@@ -78,7 +78,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 - **[قائمة الفحص العربية المجانية لصفحة جمع العملاء](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/checklist-landing-page-ar.md)** — خمس خطوات لاختبار رسالة الصفحة والنموذج والتسليم على الهاتف، دون اشتراك أو شراء.
 
 
-> **For small-business operators comparing funnel/email plans:** [See the official systeme.io plan comparison](https://systeme.io/fr/pricing?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b). This is a disclosed affiliate link: Askoure Systems may earn a commission on a qualifying purchase, at no extra cost to you. You can start with the free plan instead.
+> **For small-business operators comparing funnel/email plans:** [See the official systeme.io plan comparison](https://systeme.io/pricing?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b&tk=askoure_github_profile_pricing). This is a disclosed affiliate link: Askoure Systems may earn a commission on a qualifying purchase, at no extra cost to you. You can start with the free plan instead.
 
 
 
