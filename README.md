@@ -49,6 +49,10 @@ It focuses on:
 - explicit stop conditions
 - testable guard behavior
 
+### [CRM webhook reliability — offline proof](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/fde/crm-webhook-proof/README.md)
+
+A self-contained example of idempotent **single-batch** contact imports, data validation, CSV formula defenses and audit-safe error reporting. **18/18 local Python regression tests passed (25 Oct 2026)**; not a live CRM integration or paid-client reference. [Review the tested source and limitations](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/fde/crm-webhook-proof/README.md).
+
 ### [Askoure Systems — Commercial Proof Portfolio](https://askoure-systems.floot.app)
 
 A public portfolio of sanitized, real engineering and operations proofs.
