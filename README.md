@@ -6,6 +6,8 @@ I build practical automation around Python/FastAPI, REST APIs and webhooks, stru
 
 **For founders & small-business operators:** [Free 4-question tool finder — find the right next step before paying for marketing software](https://askouresystems.com/en/choose-business-tool?src=github_profile). No sign-up; recommendations are based on your business need, with affiliate disclosure when relevant.
 
+**Not sure which tool actually fits?** [See the five-scenario business software buyer-fit guide](resources/affiliate/business-software-buyer-fit-2026.md) — independent comparisons, free-first buying checks, and clearly identified affiliate vs ordinary links.
+
 ## What I work on
 
 - AI workflow automation and integration
