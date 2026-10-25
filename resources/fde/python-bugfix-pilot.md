@@ -34,6 +34,12 @@ Both PRs were open and awaiting upstream review when this page was published on 
 
 Implementation, documentation and technical checks use disclosed AI assistance under Mhamed's authorization. Independent human engineering review is not included.
 
+## Related technical proof for CRM/webhook inquiries
+
+The **[Offline CRM webhook reliability proof](crm-webhook-proof/README.md)** reproduces duplicate/replayed contacts, conflicting event IDs, missing fields, CSV formula risks and data-safe error logs, with **18/18 local tests PASS on 25 October 2026**. This is an independently built, synthetic **offline** demonstration, not a deployed CRM integration or client testimonial.
+
+**Scope distinction:** the published **$35** pilot above covers one agreed reproducible bug in an existing *public Python repository*. Integrating a live CRM, customer data, authentication, deployment or third-party services requires a **separate written scope, quote and payout agreement**. No hidden upgrades or fees to apply.
+
 ## Request a fit check
 
 [Open an enquiry](https://github.com/zongsm-cmyk/zongsm-cmyk/issues/new?title=Python%20bugfix%20pilot%20enquiry) with the public repository, bug and expected result, or contact through the existing [Upwork profile](https://www.upwork.com/freelancers/~01f95546c501a4254e).
