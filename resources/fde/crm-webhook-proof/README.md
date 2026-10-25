@@ -27,7 +27,7 @@ Input and outputs must be different files. Output CSV is intended for **manual r
 - Synthetic Arabic and French names round-trip through UTF-8 unchanged.
 - Rejected contact names and email addresses are not copied into the audit.
 
-**Test evidence:** On 25 October 2026, `python -m unittest discover -s tests -v` completed **18/18 PASS** locally using the published code and tests. This is an executed offline unit test; not a third-party CI result. A separate, local synthetic fixture produced 2 accepted, 1 duplicate, 1 rejected; that fixture was not published to this repository.
+**Test evidence (local and GitHub-hosted CI):** On 25 October 2026, `python -m unittest discover -s tests -v` completed **18/18 PASS** locally using the published code and tests. Independently, the [GitHub Actions run #40161683500](https://github.com/zongsm-cmyk/zongsm-cmyk/actions/runs/40161683500) completed **successfully** on **Python 3.11 and 3.12**; in both jobs the `Run 18 offline unit tests` step passed. These are offline unit tests running in GitHub-hosted CI, **not** a deployed live CRM or external integration test. A separate, local synthetic fixture produced 2 accepted, 1 duplicate, 1 rejected; that fixture was not published to this repository.
 
 ## Known limits
 
