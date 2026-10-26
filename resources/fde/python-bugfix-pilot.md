@@ -27,7 +27,7 @@ These are open-source contribution examples, not paid client testimonials:
 
 | Contribution | Reproduction evidence | Published verification |
 | --- | --- | --- |
-| [Go-Hybrid #1598: checker failure is not rejection evidence](https://github.com/limitlessprojects/Go-Hybrid/pull/1598) | Four new cases fail on the original implementation; all eight pass after the fix | [Fork CI: quick and compiler passed](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40122887982) |
+| [Go-Hybrid #1598: checker failure is not rejection evidence](https://github.com/limitlessprojects/Go-Hybrid/pull/1598) | Original author gate: four regressions fail before the fix. New specialized smoke gate: four additional cases fail on the earlier candidate. **16 focused checks passed** after both repairs (commit-reported). | [Current-head fork CI: `quick` + `compiler` SUCCESS](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40126865308), head `320ae04e` |
 | [Go-Hybrid #1604: restore candidate files after exceptional exits](https://github.com/limitlessprojects/Go-Hybrid/pull/1604) | Five new cases fail on the original implementation; all seven pass after the fix | [Fork CI: quick and compiler passed](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40123982036) |
 
 Both PRs were open and awaiting upstream review when this page was published on 24 October 2026. Passing fork CI does not establish an upstream merge or award.
