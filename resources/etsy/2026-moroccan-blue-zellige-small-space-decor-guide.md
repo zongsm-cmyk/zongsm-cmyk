@@ -4,6 +4,14 @@
 
 If you want a room that feels warmer and more distinctive but don't want to repaint, a **single small piece of wall art** can be a low-commitment starting point. Think of Moroccan-inspired color and pattern as an *accent*, not a request to reproduce a whole riad in your apartment.
 
+
+<figure>
+  <a href="https://www.etsy.com/shop/ALFAROUQWorks">
+    <img src="https://raw.githubusercontent.com/zongsm-cmyk/zongsm-cmyk/main/resources/etsy/pinterest/01_Courtyard_Zellige_PINTEREST_PIN.jpg" width="360" alt="Original ALFAROUQWorks digital preview of a warm Moroccan courtyard and turquoise zellige-inspired fountain, shown as a vertical wall art print" />
+  </a>
+  <figcaption>Actual digital artwork preview, not a physical framed print. Follow the image to the Etsy shop and verify current availability and included files.</figcaption>
+</figure>
+
 ## 2026 direction: why look at blue zellige and layered textures?
 
 Pinterest's [Spring 2026 trend report](https://newsroom.pinterest.com/en-ca/news/spring-trend-report-2026/) reported increases in searches for **“blue zellige tile” (+90%)** and **“moody blue” (+325%)** within its specified comparison periods. Its [Pinterest Predicts 2026 report](https://newsroom.pinterest.com/news/pinterest-predicts-nonconformity-self-preservation-and-escapism-drive-21-trends-for-2026/) also reported interest in **Afrohemian decor**, with **“motif berbere” (+210%)** among the growing searches.
