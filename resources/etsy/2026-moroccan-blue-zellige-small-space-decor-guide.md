@@ -12,6 +12,9 @@ If you want a room that feels warmer and more distinctive but don't want to repa
   <figcaption>Actual digital artwork preview, not a physical framed print. Follow the image to the Etsy shop and verify current availability and included files.</figcaption>
 </figure>
 
+
+**[Pin this Moroccan courtyard idea on Pinterest](https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.etsy.com%2Fshop%2FALFAROUQWorks&media=https%3A%2F%2Fraw.githubusercontent.com%2Fzongsm-cmyk%2Fzongsm-cmyk%2Fmain%2Fresources%2Fetsy%2Fpinterest%2F01_Courtyard_Zellige_PINTEREST_PIN.jpg&description=Moroccan%20Courtyard%20Printable%20Wall%20Art%20%7C%20Turquoise%20Zellige%20Fountain%20Digital%20Art%20for%204x6%20or%205x7%20inch%20frames.%20Digital%20download%2C%20no%20physical%20print%20or%20frame.%20Shop%20ALFAROUQWorks%20Etsy%20for%20current%20options.)** — Save the actual artwork preview to your chosen board. The Pin directs to the shop; please check the current digital download listing before purchase. Pinterest login and final confirmation are required.
+
 ## 2026 direction: why look at blue zellige and layered textures?
 
 Pinterest's [Spring 2026 trend report](https://newsroom.pinterest.com/en-ca/news/spring-trend-report-2026/) reported increases in searches for **“blue zellige tile” (+90%)** and **“moody blue” (+325%)** within its specified comparison periods. Its [Pinterest Predicts 2026 report](https://newsroom.pinterest.com/news/pinterest-predicts-nonconformity-self-preservation-and-escapism-drive-21-trends-for-2026/) also reported interest in **Afrohemian decor**, with **“motif berbere” (+210%)** among the growing searches.
