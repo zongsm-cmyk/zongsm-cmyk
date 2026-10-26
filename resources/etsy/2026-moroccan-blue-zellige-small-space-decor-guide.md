@@ -61,6 +61,8 @@ For a no-purchase-required tutorial, use the [free 4×6 / 5×7 printing guide](s
 
 **Digital-printing reality check:** a decorative 300-PPI label in file metadata does not invent detail that was missing from the original image. Print one small sample first, particularly if you are considering any enlargement beyond the listed options.
 
+**[Explore the published Etsy Moroccan Printable Art Pinterest board](https://www.pinterest.com/alfarouqworks/etsy-moroccan-printable-art/)** — The board already contains five live Pins, each linking to the Etsy shop. Follow individual Pins to save the original posts rather than uploading duplicates.
+
 ## See the actual five printable art previews
 
 These five images are the original vertical previews, not new mockups or physical framed artwork. All five matching Pins were published on October 26, 2026; the links below lead to existing individual Pin pages, not an unconfirmed pre-publication composer. Click a preview to visit our Etsy shop; the separate **View the published Pinterest Pin** link opens the already-live Pin so visitors can save it without creating a duplicate upload. **The buttons are not claims that any Pin has already been published.** Frame sizes and current availability must be confirmed on Etsy before buying.
@@ -99,5 +101,7 @@ These five images are the original vertical previews, not new mockups or physica
 
 - **[ALFAROUQWorks Etsy shop — Moroccan printable art](https://www.etsy.com/shop/ALFAROUQWorks)**. Follow the shop link to check availability, exact downloadable files and current prices. Nothing in this guide guarantees a currently available listing or any particular price.
 - **[Free printing checklist](small-printable-art-printing-guide.md)** before you print any artwork.
+
+*Artwork transparency:* The five printable illustrations were developed with AI image-generation assistance and art direction/selection for ALFAROUQWorks. The listing previews show the actual visual designs. Check the corresponding Etsy listing for the exact current file sizes and AI disclosure before purchasing.
 
 *Disclosure:* We create and market ALFAROUQWorks products, so the store link is our own commercial shop. This free educational guide is not sponsored by Pinterest or Etsy. The style suggestions are editorial ideas, not sourced evidence that any print is a bestseller or that it will receive a stated number of views. No physical framed artwork is offered through this guide.
