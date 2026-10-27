@@ -6,7 +6,7 @@ I build practical automation around Python/FastAPI, REST APIs and webhooks, stru
 
 **Have one reproducible Python bug?** [Request a fixed-scope **$35 USD** repair + regression-test pilot](resources/fde/python-bugfix-pilot.md) · [Open the safe public issue form](https://github.com/zongsm-cmyk/zongsm-cmyk/issues/new?template=paid-python-bugfix.yml). **No obligation or upfront fee to enquire**; acceptance criteria, delivery and payment are agreed first. [See current-head compiler-backed CI proof](https://github.com/zongsm-cmyk/Go-Hybrid/actions/runs/40126865308). These are independent open-source engineering examples, **not client testimonials**.
 
-**For founders & small-business operators:** [Free 4-question tool finder — find the right next step before paying for marketing software](https://askouresystems.com/en/choose-business-tool?src=github_profile). No sign-up; recommendations are based on your business need, with affiliate disclosure when relevant.
+**For founders & small-business operators:** [Free 4-question tool finder — find the right next step before paying for marketing software](https://askoure-systems.floot.app/en/choose-business-tool?src=github_profile). No sign-up; recommendations are based on your business need, with affiliate disclosure when relevant.
 
 **Not sure which tool actually fits?** [See the five-scenario business software buyer-fit guide](resources/affiliate/business-software-buyer-fit-2026.md) — independent comparisons, free-first buying checks, and clearly identified affiliate vs ordinary links.
 
