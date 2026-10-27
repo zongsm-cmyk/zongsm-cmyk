@@ -32,6 +32,18 @@ If you run a one-person service business, creator newsletter, social-media shop,
 
 **Practical 10-minute test before paying:** Submit your own non-production enquiry on mobile, confirm the message arrives, check the follow-up, then review how many *real* contacts and funnels you currently use. This is functional QA, not a promise that a software subscription will generate customers. If you have a fit, the disclosed **systeme.io affiliate link in the first comparison row** takes you to the vendor; clicking alone does not mean Askoure earned a commission.
 
+## Quick decision: do you need a funnel builder today?
+
+**Choose a basic landing page first** when your immediate job is to explain one service and collect a quote request. Test the form, confirmation, consent notice and response process before purchasing extra automation.
+
+**Consider a free all-in-one funnel tool** when you also need an opt-in page and simple follow-up in one place. [Read our practical systeme.io setup guide](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_buyer_guide) and check the current free-plan conditions.
+
+**Compare a paid plan only after identifying a real constraint:** for example, a required capability your current free plan lacks or a documented limit you've actually reached. [Compare systeme.io plans](https://systeme.io/pricing?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b&tk=askoure_github_buyer_guide_paid_decision) (**affiliate link**; Askoure Systems may receive a commission on an eligible purchase at no extra cost to you). Pricing and eligibility are controlled by the vendor and may change.
+
+**If your issue is email newsletters, conversational messaging, integration, or consent rather than landing pages,** use the corresponding independent alternatives in the table above instead of forcing a funnel subscription.
+
+**Before you spend:** [Run the free 10-point landing-page self-audit](https://askoure-systems.floot.app/tools/landing-page-audit?src=github_buyer_guide). The audit is educational; neither a completed checklist nor an affiliate click is a sale.
+
 ## The five-minute buyer test
 
 1. **Specify a measurable task:** e.g. “capture quote requests on a mobile-friendly page,” rather than “improve marketing.”
