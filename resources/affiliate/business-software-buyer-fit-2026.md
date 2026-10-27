@@ -4,7 +4,7 @@
 
 If you run a one-person service business, creator newsletter, social-media shop, or small agency, the costly mistake is buying a bundle of tools before confirming the ONE bottleneck you need to remove. This guide is a **decision framework**, not a performance test or a claim that any vendor guarantees sales.
 
-**Start with a four-question interactive chooser:** [Find the next useful marketing tool](https://askouresystems.com/en/choose-business-tool?src=github_buyer_guide). No login and no contact details required.
+**Start with a four-question interactive chooser:** [Find the next useful marketing tool](https://askoure-systems.floot.app/en/choose-business-tool?src=github_buyer_guide). No login and no contact details required.
 
 ## Five buying situations
 
@@ -64,4 +64,4 @@ If you run a one-person service business, creator newsletter, social-media shop,
 - [n8n Cloud and plans](https://n8n.io/pricing/)
 - [CookieYes overview](https://www.cookieyes.com/)
 
-**Next step:** [Use the free tool chooser](https://askouresystems.com/en/choose-business-tool?src=github_buyer_guide) and select the one problem you are actually solving. If your result suggests a product category for which Askoure Systems has no approved affiliate partner, the tool should recommend the category without inventing a paid link.
+**Next step:** [Use the free tool chooser](https://askoure-systems.floot.app/en/choose-business-tool?src=github_buyer_guide) and select the one problem you are actually solving. If your result suggests a product category for which Askoure Systems has no approved affiliate partner, the tool should recommend the category without inventing a paid link.
