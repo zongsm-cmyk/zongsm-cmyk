@@ -12,6 +12,8 @@ I build practical automation around Python/FastAPI, REST APIs and webhooks, stru
 
 **Starting a newsletter or a lead-capture page?** [2026 free email-vs-funnel decision guide](https://askoure-systems.floot.app/guides/email-marketing-vs-funnel-builder?src=github_profile) — compares current vendor-published Free plans for systeme.io, MailerLite and Carrd, with practical tests before paying. The systeme.io link inside is disclosed as affiliated; MailerLite and Carrd links are ordinary vendor links. No product endorsement or conversion claim.
 
+**Need a client inquiry page set up rather than another software guide?** I offer one **$35 USD, written-only setup pilot**: one inquiry page, its confirmation step and one basic follow-up check, after we agree on the brief and available features. No purchase or account subscription is included; delivery timing, access and PayPal payment are agreed before work begins. [Request the written scope by email](mailto:zongsm@gmail.com?subject=Askoure%20Systems%20-%20client%20inquiry%20setup%20%2435). **Enquiries are free; this is not a checkout or an affiliate commission.**
+
 ## What I work on
 
 - AI workflow automation and integration
