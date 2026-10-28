@@ -1,6 +1,6 @@
 # Before Paying for Business Software: Choose the Job, Not the Logo
 
-*A free independent decision guide by Askoure Systems • Updated 25 October 2026*
+*A free independent decision guide by Askoure Systems • Updated 28 October 2026*
 
 If you run a one-person service business, creator newsletter, social-media shop, or small agency, the costly mistake is buying a bundle of tools before confirming the ONE bottleneck you need to remove. This guide is a **decision framework**, not a performance test or a claim that any vendor guarantees sales.
 
