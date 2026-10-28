@@ -10,6 +10,8 @@ I build practical automation around Python/FastAPI, REST APIs and webhooks, stru
 
 **Not sure which tool actually fits?** [See the five-scenario business software buyer-fit guide](resources/affiliate/business-software-buyer-fit-2026.md) — independent comparisons, free-first buying checks, and clearly identified affiliate vs ordinary links.
 
+**Starting a newsletter or a lead-capture page?** [2026 free email-vs-funnel decision guide](https://askoure-systems.floot.app/guides/email-marketing-vs-funnel-builder?src=github_profile) — compares current vendor-published Free plans for systeme.io, MailerLite and Carrd, with practical tests before paying. The systeme.io link inside is disclosed as affiliated; MailerLite and Carrd links are ordinary vendor links. No product endorsement or conversion claim.
+
 ## What I work on
 
 - AI workflow automation and integration
