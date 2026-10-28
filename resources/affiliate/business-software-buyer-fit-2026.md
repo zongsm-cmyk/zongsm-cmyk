@@ -36,7 +36,7 @@ If you run a one-person service business, creator newsletter, social-media shop,
 
 **Choose a basic landing page first** when your immediate job is to explain one service and collect a quote request. Test the form, confirmation, consent notice and response process before purchasing extra automation.
 
-**Consider a free all-in-one funnel tool** when you also need an opt-in page and simple follow-up in one place. [Read our practical systeme.io setup guide](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_buyer_guide) and check the current free-plan conditions.
+**Consider a free all-in-one funnel tool** when you also need an opt-in page and simple follow-up in one place. [Read the practical systeme.io setup guide](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_buyer_guide) and use its [three-check free-vs-paid buying decision](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_buyer_guide#free-versus-paid) before spending. The independent guide marks any optional affiliate link and recommends the free tier while it covers your verified needs.
 
 **Compare a paid plan only after identifying a real constraint:** for example, a required capability your current free plan lacks or a documented limit you've actually reached. [Compare systeme.io plans](https://systeme.io/pricing?sa=sa0284636962507f2a1b5beb2d42ca71bf15989a0b&tk=askoure_github_buyer_guide_paid_decision) (**affiliate link**; Askoure Systems may receive a commission on an eligible purchase at no extra cost to you). Pricing and eligibility are controlled by the vendor and may change.
 
