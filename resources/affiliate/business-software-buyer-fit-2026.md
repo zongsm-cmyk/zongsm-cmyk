@@ -24,6 +24,12 @@ If your job is a **recurring newsletter** rather than a quote-request form, do n
 
 The vendor sources are [systeme.io official pricing](https://systeme.io/pricing), [MailerLite's 16 June 2026 free-plan change](https://www.mailerlite.com/help/free-plan-update-faq), and [Carrd Pro features](https://carrd.com/pro). We did not run a head-to-head performance trial, and publisher approval, traffic and income are not implied by posting this comparison.
 
+### Optional written setup service: $35
+
+If you already know you need **one working client enquiry page**, you can request a tightly scoped, **written-only $35 setup service** from Askoure Systems. It covers an initial page, a confirmation message, and one basic follow-up check, subject to an agreed brief and the capabilities available in your own software account. It does **not** include a domain purchase, paid subscription, multiple funnel variants, or an untested promise of results. Delivery timing, ownership, access and any payment are agreed before work begins; do not send passwords or API keys in the initial message.
+
+**[Email a short project brief to request the $35 scope](mailto:zongsm@gmail.com?subject=Askoure%20Systems%20-%20client%20inquiry%20setup%20%2435)**. Include your business type, what the form must collect, and whether you already have a systeme.io account. This is an enquiry link, **not a payment checkout**. PayPal receipt, setup acceptance and any future affiliate commission are separate outcomes and are not guaranteed. You may still use the free software and public setup guide without purchasing this service.
+
 ## When is a paid funnel subscription justified? (systeme.io example)
 
 **Start free when possible.** As of 25 October 2026, the vendor's public plan comparison lists **3 funnels, up to 2,000 contacts, and 1 automation rule** on the Free tier. This can be sufficient for a solo professional testing one real offer. Do not upgrade merely because a higher plan exists.
