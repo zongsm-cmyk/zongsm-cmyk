@@ -8,6 +8,8 @@ I build practical automation around Python/FastAPI, REST APIs and webhooks, stru
 
 **For founders & small-business operators:** [Free 4-question tool finder — find the right next step before paying for marketing software](https://askoure-systems.floot.app/en/choose-business-tool?src=github_profile). No sign-up; recommendations are based on your business need, with affiliate disclosure when relevant.
 
+**Planning your first lead-capture funnel?** [Use the free interactive plan-fit calculator](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_profile#plan-fit) to compare actual contact, funnel, automation-rule and domain needs with the published Free and paid tiers. It takes no signup or payment; the independent guide labels its optional affiliate referral, and current checkout terms should be verified with the vendor.
+
 **Not sure which tool actually fits?** [See the five-scenario business software buyer-fit guide](resources/affiliate/business-software-buyer-fit-2026.md) — independent comparisons, free-first buying checks, and clearly identified affiliate vs ordinary links.
 
 **Starting a newsletter or a lead-capture page?** [2026 free email-vs-funnel decision guide](https://askoure-systems.floot.app/guides/email-marketing-vs-funnel-builder?src=github_profile) — compares current vendor-published Free plans for systeme.io, MailerLite and Carrd, with practical tests before paying. The systeme.io link inside is disclosed as affiliated; MailerLite and Carrd links are ordinary vendor links. No product endorsement or conversion claim.
