@@ -6,6 +6,14 @@ If you run a one-person service business, creator newsletter, social-media shop,
 
 **Start with a four-question interactive chooser:** [Find the next useful marketing tool](https://askoure-systems.floot.app/en/choose-business-tool?src=github_buyer_guide). No login and no contact details required.
 
+## A real two-step funnel you can inspect — verified 5 November 2026
+
+Askoure Systems' own active systeme.io funnel has an opt-in step and a thank-you step. Both public URLs returned HTTP 200 and the opt-in page contains an email field and submit button. The five-part checklist is available on the thank-you page without email delivery. **This proves a configured, reachable example—not a completed form submission, working mail automation, customer, sale or measured conversion rate.**
+
+[Inspect the live proof and free checklist](https://askoure-systems.floot.app/guides/systeme-io-free-landing-page?src=github_buyer_guide) · [Import the original editable two-step funnel](https://systeme.io/dashboard/share?hash=7749854095c3d96a601008c8c39a61b346eb0a7&type=funnel) (**affiliate sharing link**; sign in to your own systeme.io account first).
+
+**Disclosure and limitations:** systeme.io's [official sharing documentation](https://help.systeme.io/article/148-how-to-share-a-sales-funnel) states that funnel-share URLs are affiliate links. Askoure Systems may earn a commission only from an eligible later purchase; importing or signing up for a free plan is not commission income. A new-account import and affiliate attribution for this specific share have not been independently tested. Replace the brand/contact details, obtain appropriate consent, and run an end-to-end test before sending real customers.
+
 ## Five buying situations
 
 | The specific problem | Consider this kind of solution | When to consider the named vendor | When not to buy yet |
