@@ -81,6 +81,8 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+- **[Free n8n workflow export preflight checklist](resources/gumroad/n8n-workflow-export-preflight-checklist.md)** — a practical ten-step manual review of JSON exports, credential rebinding, dependencies and safe client handoff. No signup; optional independent local auditor is clearly disclosed.
+
 - **[Free overdue-invoice follow-up plan + email sample](resources/gumroad/invoice-followup-5-minute-plan.md)** — a five-minute manual workflow: verify invoice facts, ask for a confirmed payment date, track next action and handle disputes without aggressive templates. No signup; optional clearly disclosed paid kit.
 
 - **[اختر أداة مشروعك في 4 أسئلة — اختبار عربي مجاني](https://askoure-systems.floot.app/tools/choose-business-tool)** — أداة تفاعلية تساعد المستقلين وأصحاب المشاريع على تحديد الحاجة بين صفحة هبوط وجمع عملاء والبريد والأتمتة والصوت/الفيديو، مع توصيات حيادية قبل شراء أي اشتراك. لا تجمع بيانات اتصال؛ فقط رابط systeme.io الشخصي المؤكد يظهر عند الحاجة الملائمة، مع إفصاح.
