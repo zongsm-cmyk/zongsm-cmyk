@@ -110,7 +110,10 @@ The public proofs above have packaged commercial versions for teams that want th
 - **[LLM Reliability Rescue Kit — $19](https://mhamedasskoure.gumroad.com/l/llm-reliability-rescue-kit)** — Python/FastAPI structured-output validation, strict Pydantic contracts, CLI tooling, regression corpus, tests, CI, and production guidance.
 - **[Agent Runaway Guard Kit — $24](https://mhamedasskoure.gumroad.com/l/agent-runaway-guard-kit)** — local Python guardrails for repeated tool calls, cyclic loops, retry storms, token/API-cost boundaries, replay testing, and CI regression gates.
 
-Both kits are one-time purchases and are intended for adaptation inside personal, internal, or client projects according to their included licenses.
+- **[n8n Workflow Preflight Auditor — $9](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=organic&utm_campaign=profile_developer_kits)** — an offline structural review for exported workflow JSON plus setup and handoff checks; it does not execute workflows or certify runtime security.
+- **[Automation ROI Scenario Planner — $9](https://mhamedasskoure.gumroad.com/l/automation-roi-scenario-planner-offline?utm_source=github&utm_medium=organic&utm_campaign=profile_developer_kits)** — standalone offline HTML kit for a three-scenario workflow business case, operating/setup costs, CSV export, printable report and pilot brief. The [free online estimator](https://automation-roi-calculator.floot.app/) remains available without signing up.
+
+Each downloadable kit is a one-time purchase. Read its specific included-file list, compatibility, license and limitations before checkout; ROI estimates are not proof of booked savings or income.
 
 ## How I approach automation and rescue work
 
