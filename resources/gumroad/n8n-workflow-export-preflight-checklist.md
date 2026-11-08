@@ -4,6 +4,20 @@
 
 An n8n workflow that looks correct on the canvas can still need credential rebinding, environment setup or a real end-to-end test on the destination instance. Use this checklist **before** importing or activating anything in a client's environment.
 
+## Quick diagnosis: what a JSON export can and cannot tell you
+
+Before importing a workflow into another n8n instance, spend 90 seconds on three concrete checks:
+
+1. **Does the file parse as JSON?** Try `python -m json.tool workflow.json > /dev/null` in a local terminal (omit the redirect on Windows if needed). If parsing fails, stop: the file is not valid JSON.
+2. **Do the node names and connections agree?** In the `connections` map, each named source and target should correspond to a node in the `nodes` array. A mismatch is worth investigating; do not assume every disconnected node is a bug.
+3. **Are the runtime dependencies available?** List credentials, linked workflows, environment variables, community nodes and n8n version. A syntactically valid export can still fail after import when these are missing.
+
+**Common real-world trap:** exporting a node with a credential name does not prove that the destination has a valid matching credential **ID**. Rebind credentials inside the destination n8n instance and run a non-production execution before activation. A static JSON checker cannot establish that the remote credential exists or works.
+
+**Free manual path:** follow steps 1–10 below; no purchase required. **Optional shortcut:** the [offline n8n Preflight Auditor ($9)](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=free_guide&utm_campaign=preflight_90_seconds_20261108) reviews selected structural checks and offers a handoff report, but it does **not** run workflows, validate credential access or guarantee production readiness.
+
+---
+
 ## 1. Work on a sanitized copy, never the only production export
 
 Export the workflow through n8n's supported workflow export path. Keep the original securely and make a separate copy for review. **Before sharing an export outside your team, inspect its node parameters and expressions for secrets and personal data** (such as pasted API tokens, passwords, email addresses and example payloads). Do not assume the export or a static checker has removed them.
