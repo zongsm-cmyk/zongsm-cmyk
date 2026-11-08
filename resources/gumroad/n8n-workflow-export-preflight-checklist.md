@@ -82,6 +82,8 @@ For a production rollout, have the client owner review the planned activation an
 
 The checklist above is usable **for free**. If you want an offline browser utility that opens plain JSON exports locally, checks selected structural issues and produces a report, see the independent **[n8n Workflow Preflight Auditor — $9 one-time](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=free_sample&utm_campaign=n8n_preflight_20261107)**. I created this paid kit. It includes fictional clean/broken examples, regression tests and a handoff checklist. It **does not** execute workflows, inspect live credentials, perform a comprehensive secrets scan or certify production readiness. It is not affiliated with n8n.
 
+**Optional faster checkout:** If you have reviewed the product scope and want the $9 auditor, [continue directly to Gumroad's payment page](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?wanted=true&utm_source=github&utm_medium=free_guide&utm_campaign=n8n_preflight_direct_checkout_20261108). Otherwise, [read the product details first](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor). This is not a required purchase.
+
 ## Official documentation
 
 - [n8n workflow sharing and credential permission model](https://docs.n8n.io/workflows/sharing/)
