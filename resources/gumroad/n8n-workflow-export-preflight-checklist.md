@@ -14,7 +14,7 @@ Before importing a workflow into another n8n instance, spend 90 seconds on three
 
 **Common real-world trap:** exporting a node with a credential name does not prove that the destination has a valid matching credential **ID**. Rebind credentials inside the destination n8n instance and run a non-production execution before activation. A static JSON checker cannot establish that the remote credential exists or works.
 
-**Free manual path:** follow steps 1–10 below; no purchase required. **Optional shortcut:** the [offline n8n Preflight Auditor ($9)](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=free_guide&utm_campaign=preflight_90_seconds_20261108) reviews selected structural checks and offers a handoff report, but it does **not** run workflows, validate credential access or guarantee production readiness.
+**Free manual path (no signup):** follow all 10 checks below and use the handoff table as-is. **Optional $9 time-saver:** the [offline n8n Preflight Auditor](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=free_guide&utm_campaign=preflight_90_seconds_20261108) flags selected structural issues in exported JSON and generates a handoff report. The published Gumroad listing includes a **7-day money-back guarantee**. It does **not** execute workflows, verify credentials, or certify production readiness.
 
 ---
 
