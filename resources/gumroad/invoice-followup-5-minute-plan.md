@@ -46,6 +46,14 @@ Once a day, filter for `Next action/date <= today`. Send a message only where a 
 
 The free example above works on its own. If you handle several clients and want ready-to-edit messages for deposits, due-date follow-ups, day-3/day-7/day-14 reminders, partial payments, disputes and handoffs **plus an Excel follow-up tracker**, I also publish [Invoice Rescue — Freelancer Payment Follow-Up Kit ($12, one-time)](https://mhamedasskoure.gumroad.com/l/invoice-rescue-payment-kit?utm_source=github&utm_medium=free_sample&utm_campaign=invoice_followup_20261107).
 
+### Recurring retainers and milestone billing?
+
+An overdue-invoice follow-up is only one step. If you bill clients with **monthly retainers, stage payments or separate project milestones**, first keep a record of the agreed period, invoice amount, due date and **actual cleared payment**. A paid invoice is not the same as received cash.
+
+**Free option:** extend the simple table at the top of this guide with `Client | Project | Retainer period | Milestone | Invoice amount | Due date | Bank-confirmed cash | Balance | Next action`. Reconcile entries manually against bank records; do not treat a payment promise as a deposit.
+
+**Optional Excel product:** [Client Project Billing & Retainer Tracker — $17.50 one-time](https://mhamedasskoure.gumroad.com/l/nndcbg?utm_source=github&utm_medium=free_invoice_guide&utm_campaign=billing_retainer_tracker_20261124). This is a separate downloadable spreadsheet ZIP designed for agency/freelancer client billing and retainer records. It does **not** connect to a bank, issue invoices automatically or guarantee collection. Review the listing and workbook compatibility before purchasing.
+
 ### Prefer a broader scope-to-payment workflow?
 
 For freelancers who need more than reminders, the optional **[Freelance Ops Suite — scope + tracking + follow-ups ($35, one-time)](https://mhamedasskoure.gumroad.com/l/freelance-ops-three-pack?utm_source=github&utm_medium=free_invoice_guide&utm_campaign=freelance_ops_20261124)** bundles three offline products: the Scope to Cash Excel project/invoice tracker, a single editable ScopeLock DOCX containing seven proposal and change-control sections, and Invoice Rescue's 13 editable reminder messages plus an Excel follow-up tracker.
