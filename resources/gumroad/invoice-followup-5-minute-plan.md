@@ -52,6 +52,10 @@ An overdue-invoice follow-up is only one step. If you bill clients with **monthl
 
 **Free option:** extend the simple table at the top of this guide with `Client | Project | Retainer period | Milestone | Invoice amount | Due date | Bank-confirmed cash | Balance | Next action`. Reconcile entries manually against bank records; do not treat a payment promise as a deposit.
 
+[![Cinematic 3D product cover for Client Project Billing and Retainer Tracker, an offline Excel dashboard. Illustrative mockup; not a screenshot of the actual workbook.](https://public-files.gumroad.com/c51sqeqfkcv5lkzyvlvolt3ikvzw)](https://mhamedasskoure.gumroad.com/l/nndcbg?utm_source=github&utm_medium=free_invoice_guide&utm_campaign=cinematic_billing_cover_20261124)
+
+*Illustrative 3D product mockup; verify actual workbook features and system requirements on the Gumroad listing before purchase.*
+
 **Optional Excel product:** [Client Project Billing & Retainer Tracker — $17.50 one-time](https://mhamedasskoure.gumroad.com/l/nndcbg?utm_source=github&utm_medium=free_invoice_guide&utm_campaign=billing_retainer_tracker_20261124). This is a separate downloadable spreadsheet ZIP designed for agency/freelancer client billing and retainer records. It does **not** connect to a bank, issue invoices automatically or guarantee collection. Review the listing and workbook compatibility before purchasing.
 
 ### Prefer a broader scope-to-payment workflow?
