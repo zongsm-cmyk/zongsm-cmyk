@@ -46,4 +46,10 @@ Once a day, filter for `Next action/date <= today`. Send a message only where a 
 
 The free example above works on its own. If you handle several clients and want ready-to-edit messages for deposits, due-date follow-ups, day-3/day-7/day-14 reminders, partial payments, disputes and handoffs **plus an Excel follow-up tracker**, I also publish [Invoice Rescue — Freelancer Payment Follow-Up Kit ($12, one-time)](https://mhamedasskoure.gumroad.com/l/invoice-rescue-payment-kit?utm_source=github&utm_medium=free_sample&utm_campaign=invoice_followup_20261107).
 
+### Prefer a broader scope-to-payment workflow?
+
+For freelancers who need more than reminders, the optional **[Freelance Ops Suite — scope + tracking + follow-ups ($35, one-time)](https://mhamedasskoure.gumroad.com/l/freelance-ops-three-pack?utm_source=github&utm_medium=free_invoice_guide&utm_campaign=freelance_ops_20261124)** bundles three offline products: the Scope to Cash Excel project/invoice tracker, a single editable ScopeLock DOCX containing seven proposal and change-control sections, and Invoice Rescue's 13 editable reminder messages plus an Excel follow-up tracker.
+
+**Choose one rather than purchasing overlapping kits twice:** the $35 suite already includes Invoice Rescue. If you only need the payment-follow-up templates, consider the standalone kit above. Neither purchase guarantees payment collection, connects to banks, or sends automated reminders.
+
 *Disclosure: I created the paid kit. Messages are sent manually; there is no automatic chasing or recovery guarantee. Review the license and checkout terms before buying.*
