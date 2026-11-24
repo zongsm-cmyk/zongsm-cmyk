@@ -84,6 +84,22 @@ The checklist above is usable **for free**. If you want an offline browser utili
 
 **Optional faster checkout:** If you have reviewed the product scope and want the $9 auditor, [continue directly to Gumroad's payment page](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?wanted=true&utm_source=github&utm_medium=free_guide&utm_campaign=n8n_preflight_direct_checkout_20261108). Otherwise, [read the product details first](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor). This is not a required purchase.
 
+## After preflight: is this automation worth building?
+
+A structurally sound n8n export does not establish that a workflow is worth running. For a client proposal or agency estimate, record three scenarios before rollout:
+
+1. **Conservative:** Manual time saved is lower than expected, with extra support and exception-handling costs.
+2. **Base:** Use a plausible expected volume, labor rate, setup effort and recurring cost.
+3. **Stretch:** Explore higher adoption and throughput, without treating the projection as a guarantee.
+
+Compare setup cost, monthly operating cost, estimated hours saved, and potential payback against your client's actual baseline. Document assumptions, test with a small pilot, and **never** use fictional numbers as claimed customer outcomes.
+
+**Free method:** Build a spreadsheet with these inputs and scenarios yourself; no purchase is necessary.
+
+**Optional offline toolkit:** [Automation ROI Scenario Planner — $6.30 with EARLY30DEV, normally $9](https://mhamedasskoure.gumroad.com/l/automation-roi-scenario-planner-offline/EARLY30DEV?utm_source=github&utm_medium=free_n8n_guide&utm_campaign=roi_planner_20261124). This separate one-time digital download supplies an offline scenario planner, CSV export, printable report and pilot brief. It does not execute or audit n8n workflows. Confirm the final total and any taxes at checkout.
+
+---
+
 ## Official documentation
 
 - [n8n workflow sharing and credential permission model](https://docs.n8n.io/workflows/sharing/)
