@@ -106,6 +106,7 @@ The public engineering proofs are free to inspect. Separate paid downloads are o
 | [Automation ROI Scenario Planner](https://mhamedasskoure.gumroad.com/l/automation-roi-scenario-planner-offline/EARLY30DEV?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $9 | **$6.30 with EARLY30DEV** | Offline automation cost/benefit scenarios, CSV export, printable report and pilot brief. |
 | [CleanQuote Estimation System](https://mhamedasskoure.gumroad.com/l/hblauc?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $14.90 | Regular price | Excel cost/margin estimator and editable proposal/scope templates. |
 | [Freelance Ops Suite](https://mhamedasskoure.gumroad.com/l/freelance-ops-three-pack?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $35 | Regular price | Offline project economics, scope documents, and payment follow-up templates. |
+| [Client Project Billing & Retainer Tracker](https://mhamedasskoure.gumroad.com/l/nndcbg?utm_source=github&utm_medium=profile&utm_campaign=client_billing_tracker_20261124) | $17.50 | Regular price | Offline formula-driven Excel dashboard for client project billing and retainer records; no bank sync. |
 
 Coupon `EARLY30DEV` applies only to the three eligible products marked above; it is not a site-wide or engineering-service discount. Confirm applicable taxes and the final payable total at Gumroad checkout. Prefer the bundle over separate purchases when the same included kits are needed; review the included files first.
 
