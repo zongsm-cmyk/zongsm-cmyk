@@ -95,14 +95,22 @@ Private implementation details, secrets, session identifiers and proprietary con
 - **[2026 Moroccan blue zellige & small-space decor guide](resources/etsy/2026-moroccan-blue-zellige-small-space-decor-guide.md)** — five renter-friendly wall-art ideas inspired by clearly dated Pinterest trend data, with accurate digital-only disclosures and the [existing Etsy shop](https://www.etsy.com/shop/ALFAROUQWorks).
 - **[Free 4×6 / 5×7 printable art printing guide](resources/etsy/small-printable-art-printing-guide.md)** — avoid accidental cropping, choose the matching JPG, understand DPI-versus-image-detail, and see the current [ALFAROUQWorks Etsy shop](https://www.etsy.com/shop/ALFAROUQWorks). Digital downloads only; current shop availability should be checked on Etsy.
 
-## Developer kits
+## Developer kits — direct checkout
 
-The public proofs above have packaged commercial versions for teams that want the runnable implementation, tests, documentation, and handoff material rather than rebuilding the reliability layer from scratch.
+The public engineering proofs are free to inspect. Separate paid downloads are optional and contain reusable assets, setup instructions and/or test examples as described on each listing. The purchase does not include custom deployment or ongoing engineering support.
 
-- **[LLM Reliability Rescue Kit — $19](https://mhamedasskoure.gumroad.com/l/llm-reliability-rescue-kit)** — Python/FastAPI structured-output validation, strict Pydantic contracts, CLI tooling, regression corpus, tests, CI, and production guidance.
-- **[Agent Runaway Guard Kit — $24](https://mhamedasskoure.gumroad.com/l/agent-runaway-guard-kit)** — local Python guardrails for repeated tool calls, cyclic loops, retry storms, token/API-cost boundaries, replay testing, and CI regression gates.
-- **[n8n Workflow Preflight Auditor — $9](https://mhamedasskoure.gumroad.com/l/n8n-workflow-preflight-auditor?utm_source=github&utm_medium=organic&utm_campaign=profile_developer_kits)** — an offline structural review for exported workflow JSON plus setup and handoff checks; it does not execute workflows or certify runtime security.
-- **[Automation ROI Scenario Planner — $9](https://mhamedasskoure.gumroad.com/l/automation-roi-scenario-planner-offline?utm_source=github&utm_medium=organic&utm_campaign=profile_developer_kits)** — standalone offline HTML kit for a three-scenario workflow business case, operating/setup costs, CSV export, printable report and pilot brief. The [free online estimator](https://automation-roi-calculator.floot.app/) remains available without signing up.
+| Product | Regular price | Current offer | Suitable for |
+| --- | ---: | ---: | --- |
+| [LLM Reliability Rescue Kit](https://mhamedasskoure.gumroad.com/l/lujvp/EARLY30DEV?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $10 | **$7 with EARLY30DEV** | Python circuit breaker, provider fallback, SQLite dead-letter queue examples and tests. |
+| [Agency Tech Master Bundle](https://mhamedasskoure.gumroad.com/l/ktkuv/EARLY30DEV?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $21.90 | **$15.33 with EARLY30DEV** | LLM reliability examples bundled with CleanQuote Excel estimation tools and an agency operations manual. |
+| [Automation ROI Scenario Planner](https://mhamedasskoure.gumroad.com/l/automation-roi-scenario-planner-offline/EARLY30DEV?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $9 | **$6.30 with EARLY30DEV** | Offline automation cost/benefit scenarios, CSV export, printable report and pilot brief. |
+| [CleanQuote Estimation System](https://mhamedasskoure.gumroad.com/l/hblauc?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $14.90 | Regular price | Excel cost/margin estimator and editable proposal/scope templates. |
+| [Freelance Ops Suite](https://mhamedasskoure.gumroad.com/l/freelance-ops-three-pack?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) | $35 | Regular price | Offline project economics, scope documents, and payment follow-up templates. |
+
+Coupon `EARLY30DEV` applies only to the three eligible products marked above; it is not a site-wide or engineering-service discount. Confirm applicable taxes and the final payable total at Gumroad checkout. Prefer the bundle over separate purchases when the same included kits are needed; review the included files first.
+
+**Free resources:** [Buyer guide and detailed comparison](https://mhamedasskoure.gumroad.com/product-guide-faq?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) · [Scope-change checklist](https://mhamedasskoure.gumroad.com/free-scope-change-checklist?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124).
+
 
 ## How I approach automation and rescue work
 
