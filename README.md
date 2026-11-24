@@ -114,6 +114,16 @@ Coupon `EARLY30DEV` applies only to the three eligible products marked above; it
 **Free resources:** [Buyer guide and detailed comparison](https://mhamedasskoure.gumroad.com/product-guide-faq?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124) · [Scope-change checklist](https://mhamedasskoure.gumroad.com/free-scope-change-checklist?utm_source=github&utm_medium=profile&utm_campaign=developer_kits_20261124).
 
 
+## B2B short-video creative services — optional custom commissions
+
+For founders who need to show their B2B digital product in a short, readable vertical video, Askoure Tools also offers **custom video production**, distinct from the downloadable Python and Excel kits above.
+
+- **[Single B2B Video Ad — $75](https://mhamedasskoure.gumroad.com/l/pgzezs?utm_source=github&utm_medium=profile&utm_campaign=b2b_creative_services_20261124&utm_content=single_video)**: one 15–30 second vertical creative, one revision round; first-cut target after completed brief and payment.
+- **[Three-Hook Video Variation Pack — $190](https://mhamedasskoure.gumroad.com/l/ejeuyn?utm_source=github&utm_medium=profile&utm_campaign=b2b_creative_services_20261124&utm_content=three_hook_variations)**: one product narrative with A/B/C opening hooks, one revision round; first-cut target after completed brief and payment.
+- **[Free creative brief and A/B/C testing checklist](resources/gumroad/b2b-video-ad-creative-brief.md)**: a free worksheet to determine fit before purchase.
+
+These are *services*, not instant MP4 downloads. Provide a public product link and authorized brand assets; confirm scope, acceptance criteria, licensing and production timeline before checkout. Views, CTR and paid conversions are not guaranteed.
+
 ## How I approach automation and rescue work
 
 1. Reproduce or measure one concrete problem.
