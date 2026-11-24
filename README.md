@@ -87,6 +87,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 ## Free practical resources
 
 - **[Free n8n workflow export preflight checklist](resources/gumroad/n8n-workflow-export-preflight-checklist.md)** — a practical ten-step manual review of JSON exports, credential rebinding, dependencies and safe client handoff. No signup; optional independent local auditor is clearly disclosed.
+- **[Free B2B video ad creative brief](resources/gumroad/b2b-video-ad-creative-brief.md)** — a no-signup 15–30s hook, proof, CTA and media-rights checklist, with transparent links to optional $75/$190 custom video services.
 - **[Free overdue-invoice follow-up plan + email sample](resources/gumroad/invoice-followup-5-minute-plan.md)** — a five-minute manual workflow: verify invoice facts, ask for a confirmed payment date, track next action and handle disputes without aggressive templates. No signup; optional clearly disclosed paid kit.
 - **[Open-source Landing Page Release Checker (Python)](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/LANDING_PAGE_QA_README.md)** — a bounded, read-only 13-check command-line tool for page metadata, server rendering, sitemap discovery, affiliate disclosure, and external-link hygiene; includes executable offline fixtures.
 - **[Landing Page Self-Audit — free interactive tool](https://askoure-systems.floot.app/tools/landing-page-audit)** — a ten-point self-check of message clarity, mobile readiness, working forms, privacy and conversion measurement, with a personalized fix list. No login required.
