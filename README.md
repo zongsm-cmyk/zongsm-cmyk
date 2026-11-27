@@ -86,6 +86,7 @@ Private implementation details, secrets, session identifiers and proprietary con
 
 ## Free practical resources
 
+- **[Free SaaS budget comparison: email, social scheduling and cloud prototypes](resources/affiliate/budget-saas-comparison-2026-11-27.md)** — published free-plan limits, use-case recommendations and deployment caveats; includes a clearly disclosed Railway referral link that may earn us a commission on qualifying purchases.
 - **[Free n8n workflow export preflight checklist](resources/gumroad/n8n-workflow-export-preflight-checklist.md)** — a practical ten-step manual review of JSON exports, credential rebinding, dependencies and safe client handoff. No signup; optional independent local auditor is clearly disclosed.
 - **[Free B2B video ad creative brief](resources/gumroad/b2b-video-ad-creative-brief.md)** — a no-signup 15–30s hook, proof, CTA and media-rights checklist, with transparent links to optional $75/$190 custom video services.
 - **[Free overdue-invoice follow-up plan + email sample](resources/gumroad/invoice-followup-5-minute-plan.md)** — a five-minute manual workflow: verify invoice facts, ask for a confirmed payment date, track next action and handle disputes without aggressive templates. No signup; optional clearly disclosed paid kit.
