@@ -8,12 +8,19 @@ A free deployment that sleeps can be appropriate for a portfolio demo, but the s
 
 ## 1. Choose the deployment model
 
-| Plan | Published starting price | Important constraint |
-| --- | ---: | --- |
-| Railway Free | $0/month | $1 monthly resource allowance; service sleeps when idle |
-| Railway Hobby | $5/month | Usage-based charges, with the plan fee counting toward usage |
-| Render Free web service | $0/month | Sleeps after 15 minutes without incoming traffic; ephemeral local filesystem |
-| Render 0.5 CPU / 512 MB paid web service | $7/month | Fixed compute-instance price; other services and usage may cost extra |
+| Plan | USD/mo |
+| --- | ---: |
+| Railway Free | $0 |
+| Railway Hobby | $5 |
+| Render Free | $0 |
+| Render paid | $7 |
+
+**Plan constraints:**
+
+- Railway Free: $1 monthly resource allowance; service sleeps when idle.
+- Railway Hobby: usage-based charges; the plan fee counts toward usage.
+- Render Free web service: sleeps after 15 minutes without incoming traffic; ephemeral local filesystem.
+- Render paid web service: 0.5 CPU / 512 MB; fixed compute-instance price; other services and usage may cost extra.
 
 Sources: [Railway pricing](https://docs.railway.com/pricing), [Railway Free](https://docs.railway.com/pricing/free-plan), [Render pricing](https://render.com/pricing), [Render Free](https://render.com/docs/free).
 
@@ -21,14 +28,23 @@ Sources: [Railway pricing](https://docs.railway.com/pricing), [Railway Free](htt
 
 Published monthly-equivalent rates: RAM $10/GB, CPU $20/vCPU, volume $0.15/GB and outbound data $0.05/GB. Compute is metered by the minute. For an illustrative month with average usage equivalent to 0.25 GB RAM and 0.10 vCPU, 1 GB volume and 2 GB of outbound traffic:
 
-```text
-RAM       = 0.25 * 10   = $2.50
-CPU       = 0.10 * 20   = $2.00
-Volume    = 1    * 0.15 = $0.15
-Egress    = 2    * 0.05 = $0.10
-Resource estimate     = $4.75
-Hobby estimate        = max(5, 4.75) = $5.00
-```
+| Resource | Cost |
+| --- | ---: |
+| RAM | $2.50 |
+| CPU | $2.00 |
+| Volume | $0.15 |
+| Egress | $0.10 |
+
+**Calculation:**
+
+- RAM: 0.25 × $10 = $2.50
+- CPU: 0.10 × $20 = $2.00
+- Volume: 1 × $0.15 = $0.15
+- Egress: 2 × $0.05 = $0.10
+
+**Resource estimate: $4.75**
+
+**Hobby estimate: $5.00** (the greater of $5 and $4.75).
 
 This is a hypothetical cost model, not a measured bill. A database, multiple replicas, taxes, extra features and changing usage can increase the total. Render's $7 compute price is not a guarantee of the complete bill either. A fixed-size instance and a metered workload are not equivalent performance configurations.
 
@@ -46,6 +62,10 @@ Our own Railway workspace has a history of failed and removed deployments; it do
 
 **Affiliate disclosure:** We may receive a commission on qualifying Railway purchases. Use the referral only if Railway suits your workload. Eligible new users may receive $20 in credits subject to the program conditions.
 
-[Railway referral — code 02Q3SS](https://railway.com?referralCode=02Q3SS) · [Official affiliate terms](https://docs.railway.com/community/affiliate-program) · [Non-referral Railway site](https://railway.com/).
+**Referral code: `02Q3SS`**
+
+[Railway referral link](https://railway.com?referralCode=02Q3SS)
+
+[Official affiliate terms](https://docs.railway.com/community/affiliate-program) · [Non-referral Railway site](https://railway.com/).
 
 [Our published SaaS budget guide on GitHub](https://github.com/zongsm-cmyk/zongsm-cmyk/blob/main/resources/affiliate/budget-saas-comparison-2026-11-27.md) includes a disclosed affiliate link.
